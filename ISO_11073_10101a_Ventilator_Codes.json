@@ -1,0 +1,4222 @@
+{
+  "resourceType": "CodeSystem",
+  "name": "ISO_11073_10101a_Ventilator_Codes",
+  "url": "data:text/plain;charset=utf-8,iso11073-10101a",
+  "version": "2015",
+  "status": "draft",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "yayaman2@gmail.com"
+        }
+      ],
+      "name": "Andy Pham"
+    }
+  ],
+  "description": "Used for mapping ventilation data attributes to ISO 11073 10101a codes from 2015",
+  "compositional": false,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "67975",
+      "definition": "Specifies the absolute date and time for system or device clock and derived objects (resolution of up to 1/100 of a second, encoded as eight pairs of 4-bit BCD nibbles denoting the { century, year, month, day, hour, minute, second, sec-fractions })."
+    },
+    {
+      "code": "67983",
+      "definition": "Specifies the relative time value for system or device clock and derived objects (default 125 ?s resolution counter having an arbitrary start time and value)."
+    },
+    {
+      "code": "67984",
+      "definition": "Absolute time stamp value for observations and derived objects."
+    },
+    {
+      "code": "67985",
+      "definition": "Relative time stamp value for observations and derived objects."
+    },
+    {
+      "code": "68072",
+      "definition": "Specifies the high-res relative time value for system or device clock and derived objects (default 1 ?s resolution counter having an arbitrary start time and value)."
+    },
+    {
+      "code": "68073",
+      "definition": "Hi-Res relative time stamp value for observations and derived objects."
+    },
+    {
+      "code": "68165",
+      "definition": "This attribute defines the time handling capabilities and the status of the MDS. Usage of this attribute is required if synchronization or settable time is supported."
+    },
+    {
+      "code": "68194",
+      "definition": "This attribute reports any date and time adjustments that occur either due to a person�s changing the clock or events such as daylight savings time. This is used in event reports only. If queried with Get MDS Object command, this value shall be not present or 0. If the agent ever adjusts the date and time, this attribute is used in an event report to report such adjustment."
+    },
+    {
+      "code": "68218",
+      "definition": "Used in the Continua WAN interface to denote the certification authority body sub-element(s)."
+    },
+    {
+      "code": "68219",
+      "definition": "Specifies the timekeeping capabilities of the device(s) and system.  The MdsTimeCapState bit values are defined in IEEE Std 11073-20601:2014."
+    },
+    {
+      "code": "68220",
+      "definition": "Specifies the time synchronization protocol (see Table A.11.4.2 for list of valid synchronization profiles)."
+    },
+    {
+      "code": "68221",
+      "definition": "Specifies the known or estimated accuracy of the device or system absolute or base-offset time relative to a reference time source such as NTP."
+    },
+    {
+      "code": "68222",
+      "definition": "Specifies the resolution of the absolute date-time clock (if not the default value of 1/100 s).  For example, a clock that ticks at 1 s intervals would have a value of 100."
+    },
+    {
+      "code": "68223",
+      "definition": "Specifies the resolution of the relative clock (if not the default value of 125 ?s).  For example, a clock that ticks at 1 s intervals would have a value of 8000."
+    },
+    {
+      "code": "68224",
+      "definition": "Specifies the resolution of the high resolution relative clock (if not the default value of 1 ?s).  For example, a clock that ticks at 1 s intervals would have a value of 1000000."
+    },
+    {
+      "code": "68225",
+      "definition": "Specifies the absolute date and time with local time-zone offset for system or device clock and derived objects expressed as a 64-bit value comprised of the 32-bit integer seconds, 16-bit fractional-seconds and signed 16-bit time-zone offset (in minutes)."
+    },
+    {
+      "code": "68226",
+      "definition": "Base-offset time stamp value for observations and derived objects."
+    },
+    {
+      "code": "68231"
+    },
+    {
+      "code": "68233"
+    },
+    {
+      "code": "68234",
+      "definition": "Specifies the four octet NTP �Reference Identifier� that identifies the clock reference source.  This compact binary representation is dependent on the NTP version and NTP stratum of the clock reference source (IETF RFC 5905)."
+    },
+    {
+      "code": "68235",
+      "definition": "Specifes, as a text string, the universally unique identifier of the timebase providing the clock reference source."
+    },
+    {
+      "code": "68237"
+    },
+    {
+      "code": "68480",
+      "definition": "Identifies the physiological measurement or technical source responsible for the alert"
+    },
+    {
+      "code": "68481",
+      "definition": "Specifies whether this message is the beginning, end or other state or state transition for the alert"
+    },
+    {
+      "code": "68482",
+      "definition": "Indicates the state of the underlying alert condition at the patient care device"
+    },
+    {
+      "code": "68483",
+      "definition": "Indicates whether visual or aural indications at the patient care device are inactivated"
+    },
+    {
+      "code": "68484",
+      "definition": "Alert priority"
+    },
+    {
+      "code": "68485",
+      "definition": "Alert type"
+    },
+    {
+      "code": "69632",
+      "display": "Generic device",
+      "definition": "Generic device, may be used as placeholder."
+    },
+    {
+      "code": "70656",
+      "display": "General device",
+      "definition": "Generic device, of any type."
+    },
+    {
+      "code": "70660",
+      "display": "Auxiliary device",
+      "definition": "Generic device, of any type."
+    },
+    {
+      "code": "70664",
+      "display": "ECG-derived respiration",
+      "definition": "Instrument for the indirect measurement of respiration rate by estimating transthoracic impedance using the ECG leads."
+    },
+    {
+      "code": "70668",
+      "display": "ECG arrhythmia",
+      "definition": "Instrument for acquisition, analysis and detection of cardiac arrhythmias or conduction disturbances."
+    },
+    {
+      "code": "70672",
+      "display": "Haemodynamic pulse rate",
+      "definition": "Instrument for acquisition, analysis and detection of haemodynamic pulse rate and other information."
+    },
+    {
+      "code": "70676",
+      "display": "ECG ST",
+      "definition": "Instrument for acquisition, analysis and detection of ST deviation and cardiac repolarization disturbances."
+    },
+    {
+      "code": "70680",
+      "display": "CO2 gas analyzer, capnometer, capnograph",
+      "definition": "Instrument for the direct measurement of airway CO2 concentration and respiration rate."
+    },
+    {
+      "code": "70684",
+      "display": "Non-invasive blood pressure",
+      "definition": "Instrument for the non-invasive measurement of blood pressure."
+    },
+    {
+      "code": "70688",
+      "display": "Cerebral perfusion",
+      "definition": "Instrument for the measurement of the level of blood perfusion in cerebral tissue."
+    },
+    {
+      "code": "70692",
+      "display": "Continuous CO2",
+      "definition": "Instrument for the direct and continuous measurement of CO2 concentration or partial pressure."
+    },
+    {
+      "code": "70696",
+      "display": "Transcutaneous pCO2",
+      "definition": "Instrument for the indirect measurement of pCO2 partial pressure on the surface of the skin."
+    },
+    {
+      "code": "70700",
+      "display": "O2 gas analyzer",
+      "definition": "Instrument for the direct measurement of airway O2 concentration and respiration rate."
+    },
+    {
+      "code": "70704",
+      "display": "Continuous O2",
+      "definition": "Instrument for the direct and continuous measurement of O2 concentration or partial pressure."
+    },
+    {
+      "code": "70708",
+      "display": "Transcutaneous pO2",
+      "definition": "Instrument for the indirect measurement of pO2 partial pressure on the surface of the skin."
+    },
+    {
+      "code": "70712",
+      "display": "Temperature difference probe",
+      "definition": "Instrument that measures temperature difference between two body sites or temperature reference."
+    },
+    {
+      "code": "70716",
+      "display": "Generic controller",
+      "definition": "Instrument that controls specific aspects of a device."
+    },
+    {
+      "code": "70720",
+      "display": "Generic alarm",
+      "definition": "Instrument that processes or annunciates an alarm."
+    },
+    {
+      "code": "70724",
+      "display": "Pulmonary wedge pressure",
+      "definition": "Instrument for the direct measurement of the pulmonary artery wedge pressure."
+    },
+    {
+      "code": "70728",
+      "display": "SvO2 monitor",
+      "definition": "Instrument that derives the % of venous O2."
+    },
+    {
+      "code": "70732",
+      "display": "Data storage",
+      "definition": "Device that stores physiologic information."
+    },
+    {
+      "code": "70736",
+      "display": "Heart rate analyzer",
+      "definition": "Instrument for measuring the rate of heart contractions."
+    },
+    {
+      "code": "70740",
+      "display": "Vital signs monitor",
+      "definition": "Instrument for direct measurement and analysis of vital signs such as temperature, pulse or heart rate, blood pressure and respiratory rate."
+    },
+    {
+      "code": "70744",
+      "display": "Configurable (modular) vital signs monitor",
+      "definition": "Configurable (modular) instrument for direct measurement and analysis of vital signs."
+    },
+    {
+      "code": "70748",
+      "display": "Non-configurable vital signs monitor",
+      "definition": "Non-configurable (fixed functionality) instrument for direct measurement and analysis of vital signs."
+    },
+    {
+      "code": "70752",
+      "display": "Generic alarm status indicator",
+      "definition": "Instrument displays alarm status."
+    },
+    {
+      "code": "70756",
+      "display": "General waveform device",
+      "definition": "Generic waveform device, of any type."
+    },
+    {
+      "code": "70760",
+      "display": "General numeric device",
+      "definition": "Generic numeric device, of any type."
+    },
+    {
+      "code": "70764",
+      "display": "Pressure meter or sensor",
+      "definition": "Instrument or sensor for the direct measurement of pressure"
+    },
+    {
+      "code": "70768",
+      "display": "Perfusion",
+      "definition": "Instrument for the measurement of blood perfusion."
+    },
+    {
+      "code": "70772",
+      "display": "Plethysmograph",
+      "definition": "Instrument for measuring changes in volume within an organ or body part due to fluctuations in the amount of blood or air it contains."
+    },
+    {
+      "code": "70776",
+      "display": "Cardiac calculator",
+      "definition": "Instrument that derives cardiac parameters"
+    },
+    {
+      "code": "70780",
+      "display": "Pulmonary calculator",
+      "definition": "Instrument that derives pulmonary parameters"
+    },
+    {
+      "code": "70784",
+      "display": "Pulmonary estimates calculator",
+      "definition": "Instrument that derives pulmonary parameters, where one or more inputs to the calculation may be clinically acceptable approximations or alternative values."
+    },
+    {
+      "code": "70788",
+      "display": "SpO2 monitor",
+      "definition": "Instrument that derives the % of arterial O2 and pulse rate parameters (blood flow) and other analytes."
+    },
+    {
+      "code": "70792",
+      "display": "SvO2 monitor",
+      "definition": "Instrument that derives the % of venous O2."
+    },
+    {
+      "code": "70796",
+      "display": "Gastric PgCO2 monitor",
+      "definition": "Instrument that measures gastric PgCO2 with tonometric catheters"
+    },
+    {
+      "code": "70800",
+      "display": "Bispectral Index",
+      "definition": "Instrument that measures the EEG and derives a �bispectral index�, a computed EEG parameter."
+    },
+    {
+      "code": "70804",
+      "display": "Entropy",
+      "definition": "Instrument that measures the EEG and derives an �entropy� index, a computed EEG parameter."
+    },
+    {
+      "code": "70808",
+      "display": "SNAP Index",
+      "definition": "Instrument that measures the EEG and derives an �SNAP� index, a computed EEG parameter."
+    },
+    {
+      "code": "70812",
+      "display": "Patient State Index",
+      "definition": "Instrument that measures the EEG and derives a �patient state index�, a computed EEG parameter."
+    },
+    {
+      "code": "70816",
+      "display": "Continuous cardiac output",
+      "definition": "Instrument that continuously derives heart output from direct measurement of blood flow."
+    },
+    {
+      "code": "70820",
+      "display": "Continuous non-invasive Cardiac Output",
+      "definition": "Instrument that derives heart output from direct measurement of blood flow."
+    },
+    {
+      "code": "70824",
+      "display": "Incubator, warmer, heater, humidifier",
+      "definition": "Instrument for modifying the ambient microenvironment for an infant, including skin temperature and ambient temperature, humidity and oxygen."
+    },
+    {
+      "code": "70828",
+      "display": "Incubator, warmer, heater.",
+      "definition": "Instrument for modifying the ambient temperature for an infant."
+    },
+    {
+      "code": "70832",
+      "display": "Incubator, warmer, heater.",
+      "definition": "Instrument for modifying the patient temperature for an infant."
+    },
+    {
+      "code": "70836",
+      "display": "Convective heater",
+      "definition": "Instrument for modifying the patient temperature using convective heating."
+    },
+    {
+      "code": "70840",
+      "display": "Radiant heater",
+      "definition": "Instrument for modifying the patient temperature using radiant heating."
+    },
+    {
+      "code": "70844",
+      "display": "N2 gas analyzer",
+      "definition": "Instrument for the direct measurement of airway N2 concentration."
+    },
+    {
+      "code": "70848",
+      "display": "N2O gas analyzer",
+      "definition": "Instrument for the direct measurement of airway N2O concentration."
+    },
+    {
+      "code": "70852",
+      "display": "Nebulizer",
+      "definition": "Device that aerosolizes medications, diluents and water in airway gas for inhalation by patient."
+    },
+    {
+      "code": "70856",
+      "display": "Impedance cardiography",
+      "definition": "Instrument for the indirect measurement and estimation of cardiac and/or respiratory parameters by measuring the electrical conductivity of the thorax and its changes over time."
+    },
+    {
+      "code": "149554",
+      "display": "Heart rate by transthoracic impedance",
+      "definition": "Heart rate obtained from the variation of transthoracic impedance."
+    },
+    {
+      "code": "149562",
+      "display": "Heart rate by palpation",
+      "definition": "Heart rate obtained from an artery that is close to the surface and a pulse can be felt.  [The most common places to measure heart rate using palpation are at the wrist (radial artery) and the neck (carotid artery).]"
+    },
+    {
+      "code": "149764",
+      "display": "Left Ventricular Stroke Work Index",
+      "definition": "Work of left ventricle of the heart in one cardiac cycle and related to body surface area (LVSW/BSA)"
+    },
+    {
+      "code": "150580",
+      "display": "SpO2 fast response",
+      "definition": "The modality of fast-response SpO2 measurement. Rate of sampling of peripheral oxygen saturation by device."
+    },
+    {
+      "code": "150584",
+      "display": "SpO2 slow response",
+      "definition": "The modality of slow-response SpO2 measurement. Rate of sampling of peripheral oxygen saturation by device."
+    },
+    {
+      "code": "150588",
+      "display": "SpO2 spot check",
+      "definition": "The modality of spot-check SpO2 measurement.  Peripheral oxygen saturation."
+    },
+    {
+      "code": "150604",
+      "display": "Pulse Oximeter Device Status",
+      "definition": "Object containing sensor or pulse oximeter-specific status flags"
+    },
+    {
+      "code": "150605",
+      "display": "Pulse characteristic status",
+      "definition": "Object containing status flags representing several characteristics of the pulse event"
+    },
+    {
+      "code": "150612",
+      "display": "Acceleration Index",
+      "definition": "Initial acceleration of blood flow in the aorta, which occurs within the first 10 to 20 milliseconds"
+    },
+    {
+      "code": "150616",
+      "display": "Systolic Time Ratio",
+      "definition": "The ratio of the electrical and mechanical systole duration (PEP/LVET)."
+    },
+    {
+      "code": "150620",
+      "display": "Thoracic Fluid Content",
+      "definition": "The electrical conductivity of the chest cavity, which is primarily determined by the intravascular, intraalveolar and the interstitial fluids in the thorax."
+    },
+    {
+      "code": "150624",
+      "display": "Left Ventricular Ejection Time",
+      "definition": "The time interval from opening to the closing of the aortic valve (mechanical systole)."
+    },
+    {
+      "code": "150628",
+      "display": "Pre-Ejection Period",
+      "definition": "The time interval from the beginning of electrical stimulation of the ventricles to the opening of the aortic valve (electrical systole)."
+    },
+    {
+      "code": "150632",
+      "display": "Velocity Index",
+      "definition": "Peak velocity of blood flow in the aorta."
+    },
+    {
+      "code": "150636",
+      "display": "Stroke Volume Index",
+      "definition": "Left-ventricular stroke volume per heart beat, normalized for body surface area."
+    },
+    {
+      "code": "150640",
+      "display": "Left Ventricular Work Index",
+      "definition": "Work performed by the left ventricle of the heart to eject the stroke volume over one minute's time, normalized for body surface area."
+    },
+    {
+      "code": "150644",
+      "display": "Right Ventricular Stroke Work Index",
+      "definition": "Work of right ventricle of the heart in one cardiac cycle and related to body surface area (RVSW/BSA)"
+    },
+    {
+      "code": "150648",
+      "display": "Femoral Artery Pressure",
+      "definition": "Pressure of the blood in the femoral artery."
+    },
+    {
+      "code": "150649",
+      "display": "Systolic Femoral Arterial Catheter Pressure",
+      "definition": "Systolic pressure of the blood in the femoral artery."
+    },
+    {
+      "code": "150650",
+      "display": "Diastolic Femoral Arterial Catheter Pressure",
+      "definition": "Mean pressure of the blood in the femoral artery."
+    },
+    {
+      "code": "150651",
+      "display": "Mean Femoral Arterial Catheter Pressure",
+      "definition": "Diastolic pressure of the blood in the femoral artery."
+    },
+    {
+      "code": "150652",
+      "display": "Pulmonary Capillary Blood Flow",
+      "definition": "Flow of the blood in the pulmonary capillaries."
+    },
+    {
+      "code": "150656",
+      "display": "Oxygenation Ratio",
+      "definition": "Oxygenation Ratio, calculated as the ratio of PaO2 (partial pressure of arterial oxygen) divided by FiO2 (the fractional of inspired oxygen, e.g. FiO2 in air = 0.21)."
+    },
+    {
+      "code": "150660",
+      "display": "Cardiac Output",
+      "definition": "Quantity of blood pumped by the left ventricle into the aorta per minute, specifically by using the Fick method"
+    },
+    {
+      "code": "150664",
+      "display": "(Estimated) O2 Consumption Index",
+      "definition": "Estimated O2 Consumption, normalized by body surface area"
+    },
+    {
+      "code": "150668",
+      "display": "(Estimated) O2 Delivery Index",
+      "definition": "Estimated O2 Delivery, normalized by body surface area"
+    },
+    {
+      "code": "150672",
+      "display": "SPO2 Oxygenation Ratio",
+      "definition": "Peripheral oxygen saturation level (of hemoglobin) to fraction of inspired oxygen ratio.  Equation:  100*SpO2(%)/FiO2(%)."
+    },
+    {
+      "code": "150676",
+      "display": "Femoral Venous Pressure",
+      "definition": "Pressure of the blood in the femoral vein."
+    },
+    {
+      "code": "150680",
+      "display": "Brachial Arterial Pressure",
+      "definition": "Pressure of the blood in the brachial artery."
+    },
+    {
+      "code": "151562",
+      "display": "Respiration rate",
+      "definition": "Rate of breathing; method not specified"
+    },
+    {
+      "code": "151570",
+      "display": "Respiration rate",
+      "definition": "Rate of breathing; method: direct airway flow measurement."
+    },
+    {
+      "code": "151578",
+      "display": "Respiration rate",
+      "definition": "Rate of breathing; method: transthoracic impedance variations"
+    },
+    {
+      "code": "151586",
+      "display": "Ventilation rate",
+      "definition": "Rate of mechanical ventilation; method not specified"
+    },
+    {
+      "code": "151594",
+      "display": "Respiration rate",
+      "definition": "Rate of breathing; method: carbon dioxide measurement"
+    },
+    {
+      "code": "151602",
+      "display": "Respiration rate",
+      "definition": "Rate of breathing; method: non-airway pressure measurement, e.g. central venous blood pressure (CVP)."
+    },
+    {
+      "code": "151610",
+      "display": "Ventilation rate",
+      "definition": "Rate of mechanical ventilation; method: carbon dioxide concentration measurement.  [This refers to the CO2 respiration rate measured by the ventilator and is not the set ventilator rate nor the ventilator inflation rate; it can include unassisted spontaneous breaths as well.]"
+    },
+    {
+      "code": "151618",
+      "display": "Ventilation rate",
+      "definition": "Rate of mechanical ventilation; method: pressure measurement"
+    },
+    {
+      "code": "151626",
+      "display": "Ventilation rate",
+      "definition": "Rate of mechanical ventilation, method: volume/flow relation (comment: pediatric)"
+    },
+    {
+      "code": "151634",
+      "display": "Ventilation sigh number",
+      "definition": "Number of sighs delivered per minute during mechanical ventilation"
+    },
+    {
+      "code": "151642",
+      "display": "Ventilation multiple sigh number",
+      "definition": "Number of multiple sighs delivered per minute during mechanical ventilation"
+    },
+    {
+      "code": "151650",
+      "display": "Acoustic Respiration Rate",
+      "definition": "Rate of breathing; method: acoustic."
+    },
+    {
+      "code": "151658",
+      "display": "Plethysmographic Respiration Rate",
+      "definition": "Rate of breathing; method: SpO2 plethysmography"
+    },
+    {
+      "code": "151666",
+      "display": "Spontaneous respiration rate (legacy devices and systems)",
+      "definition": "Spontaneous respiration rate, the rate of breaths initiated and terminated by the patient where pressure and flow/volume delivery are determined by the patient without support or assistance by a ventilator.  [This term may be used with legacy devices and systems where the precise definition of �spontaneous� is unknown; otherwise, the  more precise term MDC_RESP_BTSD_PS_RATE should be used.]"
+    },
+    {
+      "code": "151674",
+      "display": "Spontaneous respiration rate (preferred)",
+      "definition": "Spontaneous respiration rate, the rate of breaths or inspiratory gas flow initiated by the patient where flow and/or volume is determined by the patient and are delivered with the intention that the breath will be terminated by the patient."
+    },
+    {
+      "code": "151680",
+      "display": "Vital capacity",
+      "definition": "Difference in volume between maximum inspiration and maximum expiration"
+    },
+    {
+      "code": "151684",
+      "display": ".",
+      "definition": "Duration of the expiratory phase from the end of expiratory flow to the start of inspiratory flow"
+    },
+    {
+      "code": "151688",
+      "display": "Compliance of respiratory system",
+      "definition": "Change of tidal volume per unit change of airway pressure"
+    },
+    {
+      "code": "151692",
+      "display": "Thoracic compliance",
+      "definition": "Change of tidal volume per unit change of transthoracic pressure"
+    },
+    {
+      "code": "151696",
+      "display": "Lung compliance, static",
+      "definition": "Change of tidal volume per unit change in esophageal pressure measured statically at expiration end"
+    },
+    {
+      "code": "151700",
+      "display": "Concentration (or partial pressure) of carbon dioxide in airway gas",
+      "definition": "Measured partial pressure of carbon dioxide in airway gas"
+    },
+    {
+      "code": "151708",
+      "display": "End tidal carbon dioxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of carbon dioxide in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "151712",
+      "display": "Expired carbon dioxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of carbon dioxide in airway gas measured during expiration"
+    },
+    {
+      "code": "151716",
+      "display": "Inspiratory carbon dioxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of carbon dioxide in airway gas measured during inspiration"
+    },
+    {
+      "code": "151720",
+      "display": "Concentration oxygen (ventilator)",
+      "definition": "Concentration of oxygen in airway during mechanical ventilation"
+    },
+    {
+      "code": "151724",
+      "display": "Partial pressure CO2",
+      "definition": "Partial pressure of carbon dioxide in airway gas"
+    },
+    {
+      "code": "151728",
+      "display": "EndTidal CO2 partial pressure",
+      "definition": "Partial pressure of carbon dioxide in airway gas measured at end of expiration"
+    },
+    {
+      "code": "151732",
+      "display": "Expiratory CO2 partial pressure",
+      "definition": "Partial pressure of carbon dioxide in airway gas measured during expiration"
+    },
+    {
+      "code": "151736",
+      "display": "Inspiratory CO2 partial pressure",
+      "definition": "Partial pressure of carbon dioxide in airway gas measured in inspiration"
+    },
+    {
+      "code": "151740",
+      "display": "O2 partial pressure",
+      "definition": "Partial pressure of oxygen in airway"
+    },
+    {
+      "code": "151744",
+      "display": "O2 pressure difference",
+      "definition": "Difference between inspiratory and expiratory partial pressures of oxygen in airway gas"
+    },
+    {
+      "code": "151748",
+      "display": "Expiratory O2 partial pressure",
+      "definition": "Partial pressure of oxygen in airway gas measured during expiration"
+    },
+    {
+      "code": "151752",
+      "display": "Inspiratory O2 partial pressure",
+      "definition": "Partial pressure of oxygen in airway gas measured in inspiration"
+    },
+    {
+      "code": "151764",
+      "display": "Airway flow",
+      "definition": "Gas flow in airway"
+    },
+    {
+      "code": "151768",
+      "display": "Expiratory airway flow",
+      "definition": "Expiratory gas flow"
+    },
+    {
+      "code": "151769",
+      "display": "Expiratory maximum airway flow",
+      "definition": "Maximum expiratory gas flow"
+    },
+    {
+      "code": "151772",
+      "display": "Inspiratory airway flow",
+      "definition": "Inspiratory gas flow in airway"
+    },
+    {
+      "code": "151773",
+      "display": "Inspiratory maximum airway flow",
+      "definition": "Maximum inspiratory gas flow"
+    },
+    {
+      "code": "151776",
+      "display": "CO2 Production",
+      "definition": "Rate of production of carbon dioxide, measured by expired carbon dioxide in airway per unit time (typ /min)"
+    },
+    {
+      "code": "151780",
+      "display": "Transthoracic Impedance",
+      "definition": "Transthoracic measurement of electrical impedance (influenced by respiration and other factors)"
+    },
+    {
+      "code": "151784",
+      "display": "Plateau pressure",
+      "definition": "Airway pressure during an inspiratory-hold procedure or during a flow pause in a pressure control inflation"
+    },
+    {
+      "code": "151788",
+      "display": "Respiratory Pause pressure",
+      "definition": "Pressure in airway during pause between expiration and inspiration"
+    },
+    {
+      "code": "151792",
+      "display": "Airway pressure",
+      "definition": "Pressure of gas in airway"
+    },
+    {
+      "code": "151793",
+      "display": "Maximum airway pressure",
+      "definition": "Peak pressure of gas in airway"
+    },
+    {
+      "code": "151795",
+      "display": "Mean airway pressure",
+      "definition": "Average pressure of gas in airway"
+    },
+    {
+      "code": "151796",
+      "display": "CPAP pressure",
+      "definition": "Continuous pressure in airway during spontaneous respiration"
+    },
+    {
+      "code": "151804",
+      "display": "Extrinsic PEEP (positive end expiratory pressure), applied",
+      "definition": "Positive end expiratory pressure applied to the airway."
+    },
+    {
+      "code": "151808",
+      "display": "Intrinsic PEEP (aka�Auto�PEEP)",
+      "definition": ".The component of alveolar pressure in the lungs above extrinsic PEEP due to physiologic causes at the end of expiration."
+    },
+    {
+      "code": "151812",
+      "display": "Expiratory airway pressure",
+      "definition": "Pressure of gas in airway during expiration"
+    },
+    {
+      "code": "151813",
+      "display": "Maximum expiratory airway pressure",
+      "definition": "Maximum pressure of gas in airway during expiration"
+    },
+    {
+      "code": "151814",
+      "display": "Minimum expiratory airway pressure",
+      "definition": "Minimum airway pressure at any point during an expiratory phase before end expiration if less than end expiratory pressure"
+    },
+    {
+      "code": "151816",
+      "display": "Inspiratory airway pressure",
+      "definition": "Pressure of gas in airway during inspiration"
+    },
+    {
+      "code": "151817",
+      "display": "Maximum inspiratory airway pressure (peak inspiratory pressure)",
+      "definition": "Maximum pressure of gas in airway during inspiration"
+    },
+    {
+      "code": "151818",
+      "display": "Minimum inspiratory airway pressure",
+      "definition": "Minimum pressure of gas in airway during inspiration"
+    },
+    {
+      "code": "151819",
+      "display": "Mean inspiratory airway pressure",
+      "definition": "Mean pressure of gas in airway during inspiration"
+    },
+    {
+      "code": "151820",
+      "display": "Esophageal pressure",
+      "definition": "Pressure measured in the esophagus"
+    },
+    {
+      "code": "151824",
+      "display": "Intrapleural Respiratory Pressure",
+      "definition": "Pressure in intrapleural space during breathing"
+    },
+    {
+      "code": "151828",
+      "display": "Respiratory quotient",
+      "definition": "Ratio of carbon dioxide expired to oxygen used"
+    },
+    {
+      "code": "151832",
+      "display": "Ratio inspiration expiration time",
+      "definition": "Ratio of durations of inspiratory and expiratory phases"
+    },
+    {
+      "code": "151836",
+      "display": "Dead space tidal volume ratio",
+      "definition": "Ratio of dead space in respiratory tract to tidal volume"
+    },
+    {
+      "code": "151840",
+      "display": "Airway Resistance",
+      "definition": "Resistance to gas flow within the airway"
+    },
+    {
+      "code": "151844",
+      "display": "Expiratory Airway Resistance",
+      "definition": "Resistance to gas flow in airway during expiration"
+    },
+    {
+      "code": "151848",
+      "display": "Inspiratory Airway Resistance",
+      "definition": "Resistance to gas flow within the airway during inspiration"
+    },
+    {
+      "code": "151852",
+      "display": "Obstructive Apnea Duration",
+      "definition": "Duration of apnea due to airway obstruction"
+    },
+    {
+      "code": "151856",
+      "display": "Apnea Duration",
+      "definition": "Duration of apnea - no flow measured"
+    },
+    {
+      "code": "151860",
+      "display": "Central Apnea Duration",
+      "definition": "Duration of apnea - no flow and no respiratory effort"
+    },
+    {
+      "code": "151864",
+      "display": "Mixed Apnea Duration",
+      "definition": "Duration of apnea with central and obstructive components"
+    },
+    {
+      "code": "151868",
+      "display": "Respiratory tidal volume",
+      "definition": "Volume of gas leaving the patient through the patient connection port during an expiratory phase."
+    },
+    {
+      "code": "151872",
+      "display": "Airway dead space",
+      "definition": "Volume of gas in airway per breath not involved in respiratory�gas exchange�with no ventilator and no airway device.  It includes both alveolar and anatomical dead space."
+    },
+    {
+      "code": "151876",
+      "display": "Volume since start inspiration",
+      "definition": "Ventilated gas volume since start of inspiration (waveform)"
+    },
+    {
+      "code": "151880",
+      "display": "Minute volume",
+      "definition": "Total volume of gas breathed in 1 min"
+    },
+    {
+      "code": "151884",
+      "display": "Expired Minute volume",
+      "definition": "Volume of gas per minute leaving the patient's airway during expiratory phases. [This term may be used with legacy devices and systems where the breath types are unknown; otherwise, the more precise term MDC_VOL_MINUTE_AWAY_EXP_BTSD_PSAZC should be used.]"
+    },
+    {
+      "code": "151888",
+      "display": "Inspiratory�Minute volume",
+      "definition": "Volume of gas per minute entering the patient's airway during inspiratory phases"
+    },
+    {
+      "code": "151892",
+      "display": "Concentration CO2 (ventilator)",
+      "definition": "Concentration of carbon dioxide in airway gas during mechanical ventilation"
+    },
+    {
+      "code": "151896",
+      "display": "Concentration CO2 end tidal (ventilator)",
+      "definition": "Concentration of carbon dioxide in airway gas measured at the end of expiration during mechanical ventilation"
+    },
+    {
+      "code": "151900",
+      "display": "Concentration CO2 expiratory (ventilator)",
+      "definition": "Concentration of carbon dioxide in airway gas measured in expiration during mechanical ventilation"
+    },
+    {
+      "code": "151904",
+      "display": "Concentration CO2 inspiratory (ventilator)",
+      "definition": "Concentration of carbon dioxide in airway gas measured in inspiration during mechanical ventilation"
+    },
+    {
+      "code": "151908",
+      "display": "Concentration (or partial pressure) of oxygen in airway gas",
+      "definition": "Measured partial pressure of oxygen in airway gas"
+    },
+    {
+      "code": "151912",
+      "display": "Diff. inspired and expired oxygen conc. (ventilator)",
+      "definition": "Difference in oxygen concentration between inspiration and expiration during mechanical ventilation"
+    },
+    {
+      "code": "151916",
+      "display": "Concentration oxygen expiratory (ventilator)",
+      "definition": "Concentration of oxygen in airway in expiration during mechanical ventilation"
+    },
+    {
+      "code": "151920",
+      "display": "Ventilation inspired oxygen concentration",
+      "definition": "Concentration of oxygen in inspiration during mechanical ventilation"
+    },
+    {
+      "code": "151924",
+      "display": "CO2 partial pressure (ventilator)",
+      "definition": "Partial pressure of carbon dioxide in airway gas during mechanical ventilation"
+    },
+    {
+      "code": "151928",
+      "display": "EndTidal CO2 partial pressure (ventilator)",
+      "definition": "Partial pressure of carbon dioxide in airway at end expiration measured during mechanical ventilation"
+    },
+    {
+      "code": "151932",
+      "display": "Expiratory CO2 partial pressure (ventilator)",
+      "definition": "Partial pressure of carbon dioxide in airway gas during mechanical ventilation expiration"
+    },
+    {
+      "code": "151936",
+      "display": "Inspiratory CO2 partial pressure (ventilator)",
+      "definition": "Partial pressure of carbon dioxide in airway gas in inspiration during mechanical ventilation"
+    },
+    {
+      "code": "151940",
+      "display": "Ventilator airway flow",
+      "definition": "Airway flow measured at the ventilator"
+    },
+    {
+      "code": "151944",
+      "display": "Ventilation expiratory flow",
+      "definition": "Expiratory gas flow during mechanical ventilation"
+    },
+    {
+      "code": "151945",
+      "display": "Ventilation expiratory maximum flow",
+      "definition": "Maximum expiratory gas flow during mechanical ventilation"
+    },
+    {
+      "code": "151948",
+      "display": "Ventilation inspiratory flow",
+      "definition": "Inspiratory gas flow in airway during mechanical ventilation"
+    },
+    {
+      "code": "151949",
+      "display": "Ventilation inspiratory maximum flow",
+      "definition": "Maximum inspiratory gas flow during mechanical ventilation"
+    },
+    {
+      "code": "151952",
+      "display": "Ventilation-perfusion index",
+      "definition": "Ratio of alveolar ventilation and gas component to pulmonary capillary blood flow"
+    },
+    {
+      "code": "151956",
+      "display": "Ventilator pressure",
+      "definition": "Airway pressure during mechanical ventilation"
+    },
+    {
+      "code": "151957",
+      "display": "Maximum ventilation pressure",
+      "definition": "Maximum airway pressure  during mechanical ventilation"
+    },
+    {
+      "code": "151958",
+      "display": "Minimum ventilation pressure",
+      "definition": "Minimum airway pressure  during mechanical ventilation"
+    },
+    {
+      "code": "151960",
+      "display": ".",
+      "definition": "use MDC_VENT_PRESS_RESP_PLAT"
+    },
+    {
+      "code": "151964",
+      "display": "Ventilation occlusion pressure",
+      "definition": "The negative airway pressure generated when briefly occluded during inspiration"
+    },
+    {
+      "code": "151972",
+      "display": "Inspiratory airway pressure",
+      "definition": "Airway pressure, primarily during an inspiratory phase"
+    },
+    {
+      "code": "151973",
+      "display": ".",
+      "definition": "Maximum inspiratory airway pressure"
+    },
+    {
+      "code": "151974",
+      "display": ".",
+      "definition": "Minimum inspiratory airway pressure"
+    },
+    {
+      "code": "151975",
+      "display": ".",
+      "definition": "Mean inspiratory airway pressure"
+    },
+    {
+      "code": "151976",
+      "display": "Applied PEEP",
+      "definition": "Positive end expiratory pressure applied to the airway."
+    },
+    {
+      "code": "151980",
+      "display": "Ventilation tidal volume",
+      "definition": "Volume of gas delivered through the patient-connection port during a respiratory cycle"
+    },
+    {
+      "code": "151984",
+      "display": "Ventilation dead space",
+      "definition": "Volume of gas in airway per breath during mechanical ventilation not involved in respiratory exchange"
+    },
+    {
+      "code": "151988",
+      "display": "Ventilation relative dead space",
+      "definition": "Ratio of dead space to tidal volume during mechanical ventilation."
+    },
+    {
+      "code": "151992",
+      "display": "Trapped volume",
+      "definition": "Volume of gas remaining in lung at end of expiration"
+    },
+    {
+      "code": "151996",
+      "display": "Inspiratory or expiratory minute volume.",
+      "definition": "Volume of gas per minute passing in to or out of the patient's airway during inspiratory or expiratory phases, respectively."
+    },
+    {
+      "code": "152000",
+      "display": "Expired minute volume",
+      "definition": "Volume of gas per minute exhaled by the patient."
+    },
+    {
+      "code": "152004",
+      "display": "Ventilation inspiratory minute volume",
+      "definition": "Total volume of gas breathed in during 1 min during mechanical ventilation"
+    },
+    {
+      "code": "152008",
+      "display": "Ventilation minute volume",
+      "definition": "Total volume of gas delivered by ventilator during mechanical ventilation"
+    },
+    {
+      "code": "152012",
+      "display": "Mandatory . Minute volume",
+      "definition": "Minimum volume of gas delivered in 1 min during mechanical and spontaneous respiration"
+    },
+    {
+      "code": "152016",
+      "display": "Inspiratory minute volume",
+      "definition": "Volume of gas per minute passing in to the patient's airway during inspiratory phases."
+    },
+    {
+      "code": "152020",
+      "display": "Gas transport coefficient",
+      "definition": "Coefficient relating partial pressures of gas between alveoli and pulmonary capillaries"
+    },
+    {
+      "code": "152024",
+      "display": "Concentration (or partial pressure) of desflurane in airway gas",
+      "definition": "Measured partial pressure of desflurane in airway gas"
+    },
+    {
+      "code": "152028",
+      "display": "Concentration (or partial pressure) of enflurane in airway gas",
+      "definition": "Measured partial pressure of enflurane in airway gas"
+    },
+    {
+      "code": "152032",
+      "display": "Concentration (or partial pressure) of halothane in airway gas",
+      "definition": "Measured partial pressure of halothane in airway gas"
+    },
+    {
+      "code": "152036",
+      "display": "Concentration (or partial pressure) of sevoflurane in airway gas",
+      "definition": "Measured partial pressure of sevoflurane in airway gas"
+    },
+    {
+      "code": "152040",
+      "display": "Concentration (or partial pressure) of isoflurane in airway gas",
+      "definition": "Measured partial pressure of isoflurane in airway gas"
+    },
+    {
+      "code": "152044",
+      "display": "Concentration (or partial pressure) of nitrogen dioxide in airway gas",
+      "definition": "Measured partial pressure of nitrogen dioxide in airway gas"
+    },
+    {
+      "code": "152048",
+      "display": "Concentration (or partial pressure) of nitrous oxide in airway gas",
+      "definition": "Measured partial pressure of nitrous oxide in airway gas"
+    },
+    {
+      "code": "152052",
+      "display": "Concentration desflurane (gas delivery system or circuit)",
+      "definition": "Concentration of desflurane in airway gas in the system or circuit conducting gas to and from the patient"
+    },
+    {
+      "code": "152056",
+      "display": "Concentration enflurane (gas delivery system or circuit)",
+      "definition": "Concentration of enflurane in airway gas in the system or circuit conducting gas to and from the patient"
+    },
+    {
+      "code": "152060",
+      "display": "Concentration halothane (gas delivery system or circuit)",
+      "definition": "Concentration of halothane in airway gas in the system or circuit conducting gas to and from the patient"
+    },
+    {
+      "code": "152064",
+      "display": "Concentration sevoflurane (gas delivery system or circuit)",
+      "definition": "Concentration of sevoflurane in airway gas in the system or circuit conducting gas to and from the patient"
+    },
+    {
+      "code": "152068",
+      "display": "Concentration Isoflurane (gas delivery system or circuit)",
+      "definition": "Concentration of isoflurane in airway gas in the system or circuit conducting gas to and from the patient"
+    },
+    {
+      "code": "152072",
+      "display": "Concentration NO2 (gas delivery system)",
+      "definition": "Concentration of nitrogen dioxide in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "152076",
+      "display": "Concentration N2O (gas delivery system)",
+      "definition": "Concentration of nitrous oxide in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "152080",
+      "display": "Diff. inspired and expired substance conc. (ventilator)",
+      "definition": "Difference in substance concentration between inspiration and expiration during mechanical ventilation"
+    },
+    {
+      "code": "152084",
+      "display": "End tidal desflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of desflurane in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152088",
+      "display": "End tidal enflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of enflurane in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152092",
+      "display": "End tidal halothane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of halothane in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152096",
+      "display": "End tidal sevoflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of sevoflurane in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152100",
+      "display": "End tidal isoflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of isoflurane in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152104",
+      "display": "End tidal nitrogen dioxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152108",
+      "display": "End tidal nitrous oxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152112",
+      "display": "Expired desflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of desflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152116",
+      "display": "Expired enflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of enflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152120",
+      "display": "Expired halothane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of halothane in airway gas measured during expiration"
+    },
+    {
+      "code": "152124",
+      "display": "Expired sevoflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152128",
+      "display": "Expired isoflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of isoflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152132",
+      "display": "Expired nitrogen dioxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during expiration"
+    },
+    {
+      "code": "152136",
+      "display": "Expired nitrous oxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during expiration"
+    },
+    {
+      "code": "152140",
+      "display": "Concentration airway desflurane expiratory (gas delivery system or circuit)",
+      "definition": "Concentration of desflurane in airway gas measured during expiration in the system or circuit conducting gas from the patient"
+    },
+    {
+      "code": "152144",
+      "display": "Concentration airway enflurane expiratory (gas delivery system or circuit)",
+      "definition": "Concentration of enflurane in airway gas measured during expiration in the system or circuit conducting gas from the patient"
+    },
+    {
+      "code": "152148",
+      "display": "Concentration airway halothane expiratory (gas delivery system or circuit)",
+      "definition": "Concentration of halothane in airway gas measured during expiration in the system or circuit conducting gas from the patient"
+    },
+    {
+      "code": "152152",
+      "display": "Concentration airway sevoflurane expiratory (gas delivery system or circuit)",
+      "definition": "Concentration of sevoflurane in airway gas measured during expiration in the system or circuit conducting gas from the patient"
+    },
+    {
+      "code": "152156",
+      "display": "Concentration airway isoflurane expiratory (gas delivery system or circuit)",
+      "definition": "Concentration of isoflurane in airway gas measured during expiration in the system or circuit conducting gas from the patient"
+    },
+    {
+      "code": "152160",
+      "display": "Concentration airway nitrogen dioxide expiratory (gas delivery system)",
+      "definition": "Concentration of nitrogen dioxide in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "152164",
+      "display": "Concentration airway nitrous oxide expiratory (gas delivery system)",
+      "definition": "Concentration of nitrous oxide in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "152168",
+      "display": "Inspiratory desflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of desflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152172",
+      "display": "Inspiratory enflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of enflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152176",
+      "display": "Inspiratory halothane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of halothane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152180",
+      "display": "Inspiratory sevoflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152184",
+      "display": "Inspiratory isoflurane concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of isoflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152188",
+      "display": "Inspiratory nitrogen dioxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during inspiration"
+    },
+    {
+      "code": "152192",
+      "display": "Inspiratory nitrous oxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during inspiration"
+    },
+    {
+      "code": "152196",
+      "display": "Inspiratory oxygen concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of oxygen in airway gas measured during inspiration"
+    },
+    {
+      "code": "152200",
+      "display": "Concentration airway desflurane inspiratory (gas delivery system or circuit)",
+      "definition": "Concentration of desflurane in airway gas measured during inspiration in the system or circuit conducting gas to the patient"
+    },
+    {
+      "code": "152204",
+      "display": "Concentration airway enflurane inspiratory (gas delivery system or circuit)",
+      "definition": "Concentration of enflurane in airway gas measured during inspiration in the system or circuit conducting gas to the patient."
+    },
+    {
+      "code": "152208",
+      "display": "Concentration airway halothane inspiratory (gas delivery system or circuit)",
+      "definition": "Concentration of halothane in airway gas measured during inspiration in the system or circuit conducting gas to the patient"
+    },
+    {
+      "code": "152212",
+      "display": "Concentration airway sevoflurane inspiratory (gas delivery system or circuit)",
+      "definition": "Concentration of sevoflurane in airway gas measured during inspiration in the system or circuit conducting gas to the patient"
+    },
+    {
+      "code": "152216",
+      "display": "Concentration airway isoflurane inspiratory (gas delivery system or circuit)",
+      "definition": "Concentration of isoflurane in airway gas measured during inspiration in the system or circuit conducting gas to the patient"
+    },
+    {
+      "code": "152220",
+      "display": "Concentration airway nitrogen dioxide inspiratory (gas delivery system)",
+      "definition": "Concentration of nitrogen dioxide in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "152224",
+      "display": "Concentration airway nitrous oxide inspiratory (gas delivery system)",
+      "definition": "Concentration of nitrous oxide in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "152232",
+      "display": "Partial pressure airway desflurane",
+      "definition": "Partial pressure of desflurane in airway gas measured"
+    },
+    {
+      "code": "152240",
+      "display": "Partial pressure airway enflurane",
+      "definition": "Partial pressure of enflurane in airway gas measured"
+    },
+    {
+      "code": "152244",
+      "display": "Partial pressure airway halothane",
+      "definition": "Partial pressure of halothane in airway gas measured"
+    },
+    {
+      "code": "152248",
+      "display": "Partial pressure airway sevoflurane",
+      "definition": "Partial pressure of sevoflurane in airway gas measured"
+    },
+    {
+      "code": "152252",
+      "display": "Partial pressure airway isoflurane",
+      "definition": "Partial pressure of isoflurane in airway gas measured"
+    },
+    {
+      "code": "152256",
+      "display": "Partial pressure airway nitrogen dioxide",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured"
+    },
+    {
+      "code": "152260",
+      "display": "Partial pressure airway nitrous oxide",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured"
+    },
+    {
+      "code": "152264",
+      "display": "Partial pressure ventilator desflurane",
+      "definition": "Partial pressure of desflurane in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152268",
+      "display": "Partial pressure ventilator enflurane",
+      "definition": "Partial pressure of enflurane in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152272",
+      "display": "Partial pressure ventilator halothane",
+      "definition": "Partial pressure of halothane in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152276",
+      "display": "Partial pressure ventilator sevoflurane",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152280",
+      "display": "Partial pressure ventilator isoflurane",
+      "definition": "Partial pressure of isoflurane in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152284",
+      "display": "Partial pressure ventilator nitrogen dioxide",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152288",
+      "display": "Partial pressure ventilator nitrous oxide",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during mechanical ventilation"
+    },
+    {
+      "code": "152292",
+      "display": "O2 partial pressure (ventilator)",
+      "definition": "Partial pressure of oxygen in airway during mechanical ventilation"
+    },
+    {
+      "code": "152296",
+      "display": "Expiratory partial pressure airway desflurane",
+      "definition": "Partial pressure of desflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152300",
+      "display": "Expiratory partial pressure airway enflurane",
+      "definition": "Partial pressure of enflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152304",
+      "display": "Expiratory partial pressure airway halothane",
+      "definition": "Partial pressure of halothane in airway gas measured during expiration"
+    },
+    {
+      "code": "152308",
+      "display": "Expiratory partial pressure airway sevoflurane",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152312",
+      "display": "Expiratory partial pressure airway isoflurane",
+      "definition": "Partial pressure of isoflurane in airway gas measured during expiration"
+    },
+    {
+      "code": "152316",
+      "display": "Expiratory partial pressure airway nitrogen dioxide",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during expiration"
+    },
+    {
+      "code": "152320",
+      "display": "Expiratory partial pressure airway nitrous oxide",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during expiration"
+    },
+    {
+      "code": "152324",
+      "display": "Expiratory partial pressure ventilator desflurane",
+      "definition": "Partial pressure of desflurane in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152328",
+      "display": "Expiratory partial pressure ventilator enflurane",
+      "definition": "Partial pressure of enflurane in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152332",
+      "display": "Expiratory partial pressure ventilator halothane",
+      "definition": "Partial pressure of halothane in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152336",
+      "display": "Expiratory partial pressure ventilator sevoflurane",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152340",
+      "display": "Expiratory partial pressure ventilator isoflurane",
+      "definition": "Partial pressure of isoflurane in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152344",
+      "display": "Expiratory partial pressure ventilator nitrogen dioxide",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152348",
+      "display": "Expiratory partial pressure ventilator nitrous oxide",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during mechanical ventilation expiration"
+    },
+    {
+      "code": "152352",
+      "display": "Expiratory O2 partial pressure (ventilator)",
+      "definition": "Partial pressure of oxygen in airway gas during mechanical ventilation expiration"
+    },
+    {
+      "code": "152356",
+      "display": "Inspiratory partial pressure airway desflurane",
+      "definition": "Partial pressure of desflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152360",
+      "display": "Inspiratory partial pressure airway enflurane",
+      "definition": "Partial pressure of enflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152364",
+      "display": "Inspiratory partial pressure airway halothane",
+      "definition": "Partial pressure of halothane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152368",
+      "display": "Inspiratory partial pressure airway sevoflurane",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152372",
+      "display": "Inspiratory partial pressure airway isoflurane",
+      "definition": "Partial pressure of isoflurane in airway gas measured during inspiration"
+    },
+    {
+      "code": "152376",
+      "display": "Inspiratory partial pressure airway nitrogen dioxide",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during inspiration"
+    },
+    {
+      "code": "152380",
+      "display": "Inspiratory partial pressure airway nitrous oxide",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during inspiration"
+    },
+    {
+      "code": "152384",
+      "display": "Inspiratory partial pressure ventilator desflurane",
+      "definition": "Partial pressure of desflurane in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152388",
+      "display": "Inspiratory partial pressure ventilator enflurane",
+      "definition": "Partial pressure of enflurane in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152392",
+      "display": "Inspiratory partial pressure ventilator halothane",
+      "definition": "Partial pressure of halothane in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152396",
+      "display": "Inspiratory partial pressure ventilator sevoflurane",
+      "definition": "Partial pressure of sevoflurane in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152400",
+      "display": "Inspiratory partial pressure ventilator isoflurane",
+      "definition": "Partial pressure of isoflurane in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152404",
+      "display": "Inspiratory partial pressure ventilator nitrogen dioxide",
+      "definition": "Partial pressure of nitrogen dioxide in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152408",
+      "display": "Inspiratory partial pressure ventilator nitrous oxide",
+      "definition": "Partial pressure of nitrous oxide in airway gas measured during mechanical ventilation in inspiration"
+    },
+    {
+      "code": "152412",
+      "display": "Inspiratory O2 partial pressure (ventilator)",
+      "definition": "Partial pressure of oxygen in airway gas measured in inspiration during mechanical ventilation"
+    },
+    {
+      "code": "152416",
+      "display": "Inspiratory time",
+      "definition": "Duration of the inflation phase if time-terminated"
+    },
+    {
+      "code": "152420",
+      "display": "O2 Consumption",
+      "definition": "The volume of oxygen a patient inhales (consumes) per minute."
+    },
+    {
+      "code": "152424",
+      "display": "Ventilation plateau pressure",
+      "definition": "Pressure in airway in plateau phase during mechanical ventilation"
+    },
+    {
+      "code": "152428",
+      "display": "Ventilator pressure trigger sensitivity",
+      "definition": "Sensitivity of trigger in ventilator; a pressure value, for triggering an inflation."
+    },
+    {
+      "code": "152432",
+      "display": "Leakage volume",
+      "definition": "Volume of gas lost per minute by leakage in ventilation system, tubing, connectors, etc."
+    },
+    {
+      "code": "152436",
+      "display": "Alveolar ventilation",
+      "definition": "Volume of gas exchanged per breath in alveoli; difference between tidal volume and dead space"
+    },
+    {
+      "code": "152440",
+      "display": "End tidal oxygen concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of oxygen in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152444",
+      "display": "Concentration (or partial pressure) of nitrogen in airway gas",
+      "definition": "Measured partial pressure of nitrogen in airway gas"
+    },
+    {
+      "code": "152448",
+      "display": "End tidal nitrogen concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrogen in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152452",
+      "display": "Inspiratory nitrogen concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrogen in airway gas measured during inspiration"
+    },
+    {
+      "code": "152456",
+      "display": "Concentration airway agent",
+      "definition": "Concentration of agent in airway gas"
+    },
+    {
+      "code": "152460",
+      "display": "Concentration airway agent end tidal",
+      "definition": "Concentration of agent in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "152464",
+      "display": "Concentration airway agent inspiration",
+      "definition": "Concentration of agent in airway gas measured in inspiration"
+    },
+    {
+      "code": "152482",
+      "display": "Backup ventilation rate",
+      "definition": "Minimum assured ventilation rate in modes that support spontaneous breaths"
+    },
+    {
+      "code": "152490",
+      "display": "Total respiratory rate; total�breath rate",
+      "definition": "Total rate of breaths or inspiratory gas flow comprised of unassisted�(P), supported�(S), assisted�(A), synchronized assisted (Z) and controlled�(C) breath types."
+    },
+    {
+      "code": "152498",
+      "display": "Unassisted spontaneous breath rate; respiration rate",
+      "definition": "Rate of breaths or inspiratory gas flow initiated and terminated by the patient where pressure and flow/volume delivery are determined by the"
+    },
+    {
+      "code": "152506",
+      "display": "Supported breath rate",
+      "definition": "Rate of inflations or inspiratory gas flow initiated by the patient and that are intended to be terminated by the patient where the inspiratory pressure is raised above baseline to"
+    },
+    {
+      "code": "152514",
+      "display": "Assisted breath rate",
+      "definition": "Rate of primary inflations initiated by the patient at greater than the set rate.  The associated breaths are classified as having been"
+    },
+    {
+      "code": "152522",
+      "display": "Synchronized assisted breath rate",
+      "definition": "Rate of primary inflations that have been assured to be delivered at the average set rate but are initiated by the patient within a timed synchronization window. The associated breaths are classified as having had"
+    },
+    {
+      "code": "152530",
+      "display": "Controlled breath rate",
+      "definition": "Rate of primary inflations that are initiated by the ventilator at the set rate.  These breaths are classified as being"
+    },
+    {
+      "code": "152538",
+      "display": "Spontaneous respiration rate (traditional)",
+      "definition": "Rate of breaths or inspiratory gas flow initiated by the patient where flow and/or volume is determined by the patient and is delivered with the intention that the breath will be terminated by the patient.  Includes unassisted and supported breaths that are superimposed on the intermittently elevated baseline pressure with APRV, bilevel or spontaneous-only modes."
+    },
+    {
+      "code": "152546",
+      "display": "Mandatory respiration rate (traditional)",
+      "definition": "Rate of breaths or inspiratory gas flow that are delivered as assisted, synchronized assisted or controlled breaths by the ventilator, at an average or�minimum rate set by the ventilator."
+    },
+    {
+      "code": "152554",
+      "display": "Patient-initiated breath rate",
+      "definition": "Rate of breaths or inspiratory gas flow initiated by the patient that are unassisted or delivered as supported, assisted or synchronized assisted breaths."
+    },
+    {
+      "code": "152562",
+      "display": "Target respiratory rate",
+      "definition": "The ventilator calculated target respiratory rate, typically used to achieve a desired minute volume or other objective."
+    },
+    {
+      "code": "152584",
+      "display": "peak expiratory flow",
+      "definition": "Peak Expiratory Flow (PEF): maximum flow measured at the mouth during an expiration delivered with maximal"
+    },
+    {
+      "code": "152585",
+      "display": "Personal best",
+      "definition": "This value is determined by a healthcare professional or based on predicted average peak flow and is typically the highest peak condition.expiratory flow (PEF) reading an individual can obtain while in peak"
+    },
+    {
+      "code": "152586",
+      "display": "forced expiratory volume at 1s",
+      "definition": "It is a measure of expiratory volume of a subject under forced conditions at 1 s, measured from time zero (time at which subject starts the expiration)."
+    },
+    {
+      "code": "152587",
+      "display": "forced expiratory volume at 6s",
+      "definition": "It is a measure of expiratory volume of a subject under forced conditions at 6 s, measured from time zero (time at which subject starts the expiration)."
+    },
+    {
+      "code": "152596",
+      "display": "Dynamic airway resistance",
+      "definition": "Resistance to gas flow within the airway, dynamically calculated using a least squares or other curve fitting algorithm where airway resistance and lung compliance are related by the �equation of motion� ?P"
+    },
+    {
+      "code": "152600",
+      "display": "Dynamic compliance",
+      "definition": "Change of tidal volume per unit change of airway pressure, dynamically calculated using a least squares or other curve fitting algorithm where airway resistance and lung compliance are related by the �equation of motion� ?P"
+    },
+    {
+      "code": "152604",
+      "display": "Inspiratory time percent",
+      "definition": "Duration of the inflation phase if time-terminated, expressed as a percent-ratio of the total respiratory period"
+    },
+    {
+      "code": "152608",
+      "display": "Inspiratory time",
+      "definition": "Duration of an inspiratory phase"
+    },
+    {
+      "code": "152612",
+      "display": "Expiratory time",
+      "definition": "Duration of an expiratory phase"
+    },
+    {
+      "code": "152616",
+      "display": "Backup inspiratory time",
+      "definition": "The duration of the inspiratory phase for controlled (primary) inflations when a backup inflation is delivered."
+    },
+    {
+      "code": "152621",
+      "display": "Maximum pressure support time",
+      "definition": "The maximum inspiratory time for a pressure-supported breath."
+    },
+    {
+      "code": "152624",
+      "display": ".",
+      "definition": "Interval from the end of inspiratory flow to the start of expiratory flow during unassisted spontaneous breathing and pressure-regulated inflations, expressed as a time duration."
+    },
+    {
+      "code": "152628",
+      "display": ".",
+      "definition": "Interval from the end of inspiratory flow to the start of expiratory flow during unassisted spontaneous breathing and pressure-regulated inflations, expressed as a percentage of the duration of the inspiratory phase."
+    },
+    {
+      "code": "152632",
+      "display": ".",
+      "definition": "The duration of an inspiratory hold, a ventilator function intended to temporarily maintain a constant lung volume, or to maintain a constant airway pressure, at the end of an inspiratory or inflation phase."
+    },
+    {
+      "code": "152636",
+      "display": ".",
+      "definition": "Duration for an expiratory hold, a ventilator function intended to temporarily maintain a constant lung volume during a set extension of the expiratory phase."
+    },
+    {
+      "code": "152640",
+      "display": "Inspiratory Percent",
+      "definition": "Inspiratory time divided by the total respiratory cycle time, expressed as a percent."
+    },
+    {
+      "code": "152644",
+      "display": "Thigh",
+      "definition": "The time duration that the ventilator holds the high  (inspiratory) baseline pressure level in APRV or Bi-Level modes."
+    },
+    {
+      "code": "152648",
+      "display": "Tlow",
+      "definition": "The time duration that the ventilator holds the low (expiratory) baseline pressure level in APRV or Bi-Level modes."
+    },
+    {
+      "code": "152652",
+      "display": "Bias flow",
+      "definition": "The continuous flow that is circulated through the patient circuit but is not intended to contribute to the work of ventilation. Generally refers to a low-level flow that improves the responsiveness and accuracy of the ventilator�s control and detection systems and to minimize rebreathing of expired gas."
+    },
+    {
+      "code": "152656",
+      "display": "Continuous flow",
+      "definition": "A continuous flow that passes through the ventilator breathing system, with a proportion intermittently passing to the patient�s lung (e.g. whenever the airway pressure is raised by a pressure-controlled occlusion of the expiratory valve)."
+    },
+    {
+      "code": "152660",
+      "display": "Inspired Tidal Volume",
+      "definition": "Volume of inspired gas during each breath, breath type(s) not specified."
+    },
+    {
+      "code": "152664",
+      "display": "Expired Tidal Volume",
+      "definition": "Volume of expired gas for each breath, breath type(s) not specified. [This term may be used with legacy devices and systems where the breath types are unknown; otherwise, the more precise term MDC_VOL_AWAY_TIDAL_EXP_BTSD_PSAZC should be used.]"
+    },
+    {
+      "code": "152668",
+      "display": "Expired Tidal Volume per body mass",
+      "definition": "Volume of expired gas for all breath and inflation types, normalized by the patient�s ideal body weight (typ kg), reported individually or as an average."
+    },
+    {
+      "code": "152672",
+      "display": "Expired Tidal Volume",
+      "definition": "Volume of expired gas for all breath and inflation types, reported individually or as an average."
+    },
+    {
+      "code": "152676",
+      "display": "Expired Tidal Volume for unassisted or supported (aka spontaneous) breaths",
+      "definition": "Volume of expired gas for unassisted or supported (aka spontaneous) breaths."
+    },
+    {
+      "code": "152680",
+      "display": "Expired Tidal Volume for assisted, synchronized assisted or controlled (aka mandatory) breaths",
+      "definition": "Volume of expired gas for assisted, synchronized assisted or controlled (aka mandatory) breaths."
+    },
+    {
+      "code": "152684",
+      "display": "Expired Tidal Volume for unassisted or supported (aka spontaneous) breaths per body mass",
+      "definition": "Volume of expired gas for unassisted or supported (aka spontaneous) breaths, normalized by the patient�s ideal body weight (typ kg)."
+    },
+    {
+      "code": "152688",
+      "display": "Expired minute volume per body mass",
+      "definition": "Volume of expired gas per minute leaving the patient's airway, normalized by the patient�s ideal body weight (typ kg), all breath and inflation types."
+    },
+    {
+      "code": "152692",
+      "display": "Expired minute volume (total for all breath types)",
+      "definition": "Volume of expired gas per minute for all breath and inflation types (total)."
+    },
+    {
+      "code": "152696",
+      "display": "Expired Minute volume for unassisted or supported (aka spontaneous) breaths",
+      "definition": "Volume of expired gas per minute for unassisted or supported (aka spontaneous) breaths."
+    },
+    {
+      "code": "152700",
+      "display": "Expired Minute volume for assisted or controlled (aka mandatory) inflations",
+      "definition": "Volume of expired gas per minute for assisted, synchronized assisted or controlled (aka mandatory) breaths."
+    },
+    {
+      "code": "152704",
+      "display": "Expired Minute volume for unassisted or supported (aka spontaneous) breaths per body mass",
+      "definition": "Volume of expired gas per minute for unassisted or supported (aka spontaneous) breaths, normalized by the patient�s ideal body weight (typ kg)."
+    },
+    {
+      "code": "152708",
+      "display": ".",
+      "definition": "Integral flow of gas in airway, typically as a waveform or spirometry waveform segment"
+    },
+    {
+      "code": "152712",
+      "display": "End inspiratory pressure",
+      "definition": "Pressure of gas in airway measured at the end of the inspiratory phase (this may be coincident with the peak inspiratory pressure or the plateau pressure and thus may have the same value as either)."
+    },
+    {
+      "code": "152716",
+      "display": "Baseline airway pressure",
+      "definition": "Baseline airway pressure"
+    },
+    {
+      "code": "152720",
+      "display": "Inspiratory airway pressure relative to PEEP or BAP",
+      "definition": "Inspiratory airway pressure relative to PEEP or BAP."
+    },
+    {
+      "code": "152724",
+      "display": "Backup inspiratory airway pressure",
+      "definition": "The inspiratory airway pressure for controlled (primary) inflations when a backup inflation is delivered."
+    },
+    {
+      "code": "152728",
+      "display": "Backup inspiratory airway pressure relative to PEEP or BAP",
+      "definition": "The inspiratory airway pressure relative to PEEP or BAP for controlled (primary) inflations when a backup inflation is delivered."
+    },
+    {
+      "code": "152732",
+      "display": "Pressure for support inflations",
+      "definition": "The inspiratory airway pressure for pressure support inflations."
+    },
+    {
+      "code": "152736",
+      "display": "Delta pressure for support inflations",
+      "definition": "The inspiratory airway pressure relative to PEEP or BAP for pressure support inflations."
+    },
+    {
+      "code": "152740",
+      "display": "High pressure",
+      "definition": "The high (inspiratory) pressure level for APRV or Bi-Level modes."
+    },
+    {
+      "code": "152744",
+      "display": "Low pressure",
+      "definition": "The low (expiratory) pressure level for APRV or Bi-Level modes."
+    },
+    {
+      "code": "152748",
+      "display": "Pressure limit",
+      "definition": "The pressure at which the breath is limited and held for the remaining inspiratory time in a volume-controlled breath."
+    },
+    {
+      "code": "152752",
+      "display": "Maximum pressure",
+      "definition": "The maximum pressure allowed in the patient breathing circuit. Once reached, the inspiratory phase ends, and the ventilator immediately begins the expiratory phase."
+    },
+    {
+      "code": "152756",
+      "display": "High pressure relief limit",
+      "definition": "Threshold value at which a protection device prevents any further rise in the airway pressure"
+    },
+    {
+      "code": "152760",
+      "display": "Minimum pressure",
+      "definition": "The minimum target pressure limit."
+    },
+    {
+      "code": "152764",
+      "display": "Minimum delta pressure",
+      "definition": "The minimum target pressure limit relative to PEEP or BAP."
+    },
+    {
+      "code": "152768",
+      "display": "Rise time",
+      "definition": "The time for pressure to reach a preset fraction of the set inspiratory pressure for controlled inflations."
+    },
+    {
+      "code": "152772",
+      "display": "Pressure support rise time",
+      "definition": "The time for pressure to reach a preset fraction of the set inspiratory pressure for support breaths."
+    },
+    {
+      "code": "152776",
+      "display": "Dynamic Plateau Pressure",
+      "definition": "The estimated airway pressure that would have occurred during an inspiratory-hold or during a flow pause in a pressure control inflation."
+    },
+    {
+      "code": "152780",
+      "display": "Ventilation occlusion pressure, P0.1  (100 ms)",
+      "definition": "The negative airway pressure generated during the first 100 ms of an occluded inspiration"
+    },
+    {
+      "code": "152784",
+      "display": "Negative Inspiratory Force (NIF)",
+      "definition": "The maximum negative airway pressure generated during an occluded inspiration arising from a Negative Inspiratory Force (NIF) maneuver"
+    },
+    {
+      "code": "152788",
+      "display": "Total PEEP",
+      "definition": "The sum of the extrinsic PEEPe and intrinsic PEEPi, representing the total pressure in the lungs at the end of expiration."
+    },
+    {
+      "code": "152792",
+      "display": "Dynamic extrinsic PEEP",
+      "definition": "Dynamic extrinsic PEEP, the minimum pressure at or near the end of expiration, reflecting the set PEEP from the ventilator."
+    },
+    {
+      "code": "152796",
+      "display": "Dynamic intrinsic PEEP",
+      "definition": "Dynamic intrinsic PEEP, obtained during the short period between expiratory valve closure and flow arriving at the patient."
+    },
+    {
+      "code": "152800",
+      "display": "Dynamic total PEEP",
+      "definition": "Dynamic total PEEP, obtained during the short period between expiratory valve closure and flow arriving at the patient."
+    },
+    {
+      "code": "152804",
+      "display": "Ventilator flow trigger sensitivity",
+      "definition": "Sensitivity of trigger in ventilator; a flow value, for triggering an inflation."
+    },
+    {
+      "code": "152808",
+      "display": "Ventilator end-inspiratory flow threshold",
+      "definition": "Flow threshold in ventilator to end the inspiratory phase, expressed as a flow value."
+    },
+    {
+      "code": "152812",
+      "display": "Expended Energy",
+      "definition": "Expended energy measurement (or estimate) using indirect calorimetry based on O2 consumption and CO2 production by patient, measured over a period of time."
+    },
+    {
+      "code": "152816",
+      "display": "O2 Consumption per body mass (typ kg)",
+      "definition": "The volume of oxygen a patient inhales (consumes) per minute, normalized by the patient�s ideal body weight (typ kg)."
+    },
+    {
+      "code": "152820",
+      "display": "O2 Consumption per body surface area (typ m",
+      "definition": "The volume of oxygen a patient inhales (consumes) per minute, normalized by patient body surface area (typ m"
+    },
+    {
+      "code": "152824",
+      "display": "CO2 Production per body mass (typ kg)",
+      "definition": "Rate of production of carbon dioxide, measured by expired carbon dioxide in airway per unit time (typ  /min), normalized by the patient�s ideal body weight (typ kg)."
+    },
+    {
+      "code": "152828",
+      "display": "CO2 Production per body surface area (typ m",
+      "definition": "Rate of production of carbon dioxide, measured by expired carbon dioxide in airway per unit time (typ  /min), normalized by patient body surface area (typ m"
+    },
+    {
+      "code": "152832",
+      "display": "Barometric Pressure",
+      "definition": "Barometric (atmospheric) air pressure"
+    },
+    {
+      "code": "152836",
+      "display": "Ambient Pressure",
+      "definition": "Ambient (immediate patient environment) air pressure"
+    },
+    {
+      "code": "152840",
+      "display": "(Estimated) Blood Shunt Fraction",
+      "definition": "The (estimated) fraction of cardiac output that returns to the left heart without the benefit of exposure to ventilated alveoli."
+    },
+    {
+      "code": "152844",
+      "display": "(Estimated) Arterial-Venous O2 Content Difference",
+      "definition": "The (estimated) difference in the oxygen content of the blood between the arterial blood and the venous blood."
+    },
+    {
+      "code": "152848",
+      "display": "Pulmonary Arterial pCO2",
+      "definition": "Partial pressure of CO2 in the pulmonary artery"
+    },
+    {
+      "code": "152852",
+      "display": "Pulmonary Vascular Resistance Index",
+      "definition": "Pulmonary Vascular Resistance Index, normalized with respect to body surface area"
+    },
+    {
+      "code": "152856",
+      "display": "(Estimated) Oxygen Extraction Ratio",
+      "definition": "The (estimated) ratio (fraction) of oxygen that is consumed divided by the oxygen that is delivered."
+    },
+    {
+      "code": "152860",
+      "display": "Rapid Shallow Breathing Index",
+      "definition": "The rapid shallow breathing index (RSBI) is calculated by dividing the spontaneous breath rate by the tidal volume, averaged over one minute."
+    },
+    {
+      "code": "152864",
+      "display": "MAC sum",
+      "definition": "Sum of the Minimum Alveolar Concentration for anesthetic gas and N2O"
+    },
+    {
+      "code": "152868",
+      "display": "MAC age-corrected sum",
+      "definition": "Age corrected sum of the Minimum Alveolar Concentration for anesthetic gas and N2O"
+    },
+    {
+      "code": "152872",
+      "display": "Mean Aveolar Concentration",
+      "definition": "Mean Aveolar Concentration, expressed as a percentage relative to the needed to prevent movement (motor response) in 50% of subjects in response to surgical (pain) stimulus."
+    },
+    {
+      "code": "152876",
+      "display": "Fresh air flow",
+      "definition": "Flow of Air component of Fresh Gas"
+    },
+    {
+      "code": "152880",
+      "display": "Air delivered during a case",
+      "definition": "Volume (gas) of air delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152884",
+      "display": "Total air delivered",
+      "definition": "Total volume (gas) of air delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "152888",
+      "display": "Air supply (pipeline) pressure",
+      "definition": "Air supply (pipeline) pressure"
+    },
+    {
+      "code": "152892",
+      "display": "Air cylinder pressure",
+      "definition": "Air cylinder pressure"
+    },
+    {
+      "code": "152896",
+      "display": "Desflurane gas delivered during a case",
+      "definition": "Volume of desflurane gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152900",
+      "display": "Desflurane liquid delivered during a case",
+      "definition": "Volume (liquid) of desflurane delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152904",
+      "display": "Total desflurane liquid delivered",
+      "definition": "Total volume (liquid) of desflurane delivered"
+    },
+    {
+      "code": "152908",
+      "display": "Total desflurane gas delivered",
+      "definition": "Total volume of desflurane gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "152912",
+      "display": "Enflurane gas delivered during a case",
+      "definition": "Volume of enflurane gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152916",
+      "display": "Enflurane liquid delivered during a case",
+      "definition": "Volume (liquid) of enflurane delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152920",
+      "display": "Total enflurane liquid delivered",
+      "definition": "Total volume (liquid) of enflurane delivered"
+    },
+    {
+      "code": "152924",
+      "display": "Total enflurane gas delivered",
+      "definition": "Total volume of enflurane gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "152928",
+      "display": "Halothane gas delivered during a case",
+      "definition": "Volume of halothane gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152932",
+      "display": "Halothane liquid delivered during a case",
+      "definition": "Volume (liquid) of halothane delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152936",
+      "display": "Total halothane liquid delivered",
+      "definition": "Total volume (liquid) of halothane delivered"
+    },
+    {
+      "code": "152940",
+      "display": "Total halothane gas delivered",
+      "definition": "Total volume of halothane gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "152944",
+      "display": "Isoflurane gas delivered during a case",
+      "definition": "Volume of isoflurane gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152948",
+      "display": "Isoflurane liquid delivered during a case",
+      "definition": "Volume (liquid) of isoflurane delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152952",
+      "display": "Total isoflurane liquid delivered",
+      "definition": "Total volume (liquid) of isoflurane delivered"
+    },
+    {
+      "code": "152956",
+      "display": "Total isoflurane gas delivered",
+      "definition": "Total volume of isoflurane gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "152960",
+      "display": "Nitrous oxide gas delivered during a case",
+      "definition": "Volume (gas) of nitrous oxide delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152964",
+      "display": "Total nitrous oxide gas delivered",
+      "definition": "Total volume (gas) of nitrous oxide delivered"
+    },
+    {
+      "code": "152968",
+      "display": "N2O supply (pipeline) pressure",
+      "definition": "N2O supply (pipeline) pressure"
+    },
+    {
+      "code": "152972",
+      "display": "N2O cylinder pressure",
+      "definition": "N2O cylinder pressure"
+    },
+    {
+      "code": "152976",
+      "display": "Sevoflurane gas delivered during a case",
+      "definition": "Volume of sevoflurane gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152980",
+      "display": "Sevoflurane liquid delivered during a case",
+      "definition": "Volume (liquid) of sevoflurane delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "152984",
+      "display": "Total sevoflurane liquid delivered",
+      "definition": "Total volume (liquid) of sevoflurane delivered"
+    },
+    {
+      "code": "152988",
+      "display": "Total sevoflurane gas delivered",
+      "definition": "Total volume of sevoflurane gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "152992",
+      "display": "Concentration (or partial pressure) of argon in airway gas",
+      "definition": "Measured partial pressure of argon in airway gas"
+    },
+    {
+      "code": "152996",
+      "display": "End tidal argon concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of argon in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "153000",
+      "display": "Expired argon concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of argon in airway gas measured during expiration"
+    },
+    {
+      "code": "153004",
+      "display": "Inspiratory argon concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of argon in airway gas measured during inspiration"
+    },
+    {
+      "code": "153008",
+      "display": "Concentration argon (gas delivery system)",
+      "definition": "Concentration of argon in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "153012",
+      "display": "Concentration airway argon expiratory (gas delivery system)",
+      "definition": "Concentration of argon in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "153016",
+      "display": "Concentration airway argon inspiratory (gas delivery system)",
+      "definition": "Concentration of argon in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "153020",
+      "display": "Concentration carbon dioxide (gas delivery system)",
+      "definition": "Concentration of carbon dioxide in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "153024",
+      "display": "Concentration airway carbon dioxide expiratory (gas delivery system)",
+      "definition": "Concentration of carbon dioxide in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "153028",
+      "display": "Concentration airway carbon dioxide inspiratory (gas delivery system)",
+      "definition": "Concentration of carbon dioxide in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "153032",
+      "display": "Carbon dioxide gas delivered during a case",
+      "definition": "Volume (gas) of carbon dioxide delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "153036",
+      "display": "Total carbon dioxide gas delivered",
+      "definition": "Total volume (gas) of carbon dioxide delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "153040",
+      "display": "Concentration (or partial pressure) of helium in airway gas",
+      "definition": "Measured partial pressure of helium in airway gas"
+    },
+    {
+      "code": "153044",
+      "display": "End tidal helium concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of helium in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "153048",
+      "display": "Expired helium concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of helium in airway gas measured during expiration"
+    },
+    {
+      "code": "153052",
+      "display": "Inspiratory helium concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of helium in airway gas measured during inspiration"
+    },
+    {
+      "code": "153056",
+      "display": "Concentration helium (gas delivery system)",
+      "definition": "Concentration of helium in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "153060",
+      "display": "Concentration airway helium expiratory (gas delivery system)",
+      "definition": "Concentration of helium in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "153064",
+      "display": "Concentration airway helium inspiratory (gas delivery system)",
+      "definition": "Concentration of helium in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "153068",
+      "display": "Helium gas delivered during a case",
+      "definition": "Volume of helium gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "153072",
+      "display": "Total helium gas delivered",
+      "definition": "Total of helium gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "153076",
+      "display": "Expired nitrogen concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitrogen in airway gas measured during expiration"
+    },
+    {
+      "code": "153080",
+      "display": "Concentration nitrogen (gas delivery system)",
+      "definition": "Concentration of nitrogen in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "153084",
+      "display": "Concentration airway nitrogen expiratory (gas delivery system)",
+      "definition": "Concentration of nitrogen in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "153088",
+      "display": "Concentration airway nitrogen inspiratory (gas delivery system)",
+      "definition": "Concentration of nitrogen in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "153092",
+      "display": "Fresh gas nitrous oxide flow",
+      "definition": "Flow of Nitrous Oxide component of Fresh Gas"
+    },
+    {
+      "code": "153096",
+      "display": "Concentration (or partial pressure) of nitric oxide in airway gas",
+      "definition": "Measured partial pressure of nitric oxide in airway gas"
+    },
+    {
+      "code": "153100",
+      "display": "End tidal nitric oxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitric oxide in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "153104",
+      "display": "Expired nitric oxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitric oxide in airway gas measured during expiration"
+    },
+    {
+      "code": "153108",
+      "display": "Inspiratory nitric oxide concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of nitric oxide in airway gas measured during inspiration"
+    },
+    {
+      "code": "153112",
+      "display": "Concentration nitric oxide (gas delivery system)",
+      "definition": "Concentration of nitric oxide in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "153116",
+      "display": "Concentration airway nitric oxide expiratory (gas delivery system)",
+      "definition": "Concentration of nitric oxide in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "153120",
+      "display": "Concentration airway nitric oxide inspiratory (gas delivery system)",
+      "definition": "Concentration of nitric oxide in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "153124",
+      "display": "Nitric oxide gas delivered during a case",
+      "definition": "Volume of nitric oxide gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "153128",
+      "display": "Total nitric oxide gas delivered",
+      "definition": "Total volume of nitric oxide gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "153132",
+      "display": "Expired oxygen concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of oxygen in airway gas measured during expiration"
+    },
+    {
+      "code": "153136",
+      "display": "Concentration oxygen (gas delivery system or circuit)",
+      "definition": "Concentration of oxygen in airway gas in the system or circuit conducting gas to and from the patient"
+    },
+    {
+      "code": "153140",
+      "display": "Concentration airway oxygen expiratory (gas delivery system or circuit)",
+      "definition": "Concentration of oxygen in airway gas measured during expiration in the system or circuit conducting gas from the patient"
+    },
+    {
+      "code": "153144",
+      "display": "Concentration airway oxygen inspiratory (gas delivery system or circuit)",
+      "definition": "Concentration of oxygen in airway gas measured during inspiration in the system or circuit conducting gas to the patient"
+    },
+    {
+      "code": "153148",
+      "display": "Oxygen gas delivered during a case",
+      "definition": "Volume (gas) of oxygen delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "153152",
+      "display": "Total oxygen gas delivered",
+      "definition": "Total volume (gas) of oxygen delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "153156",
+      "display": "Fresh gas oxygen flow",
+      "definition": "Flow of Oxygen component of Fresh Gas"
+    },
+    {
+      "code": "153160",
+      "display": "O2 supply (pipeline) pressure",
+      "definition": "O2 supply (pipeline) pressure"
+    },
+    {
+      "code": "153164",
+      "display": "O2 cylinder pressure",
+      "definition": "O2 cylinder pressure"
+    },
+    {
+      "code": "153168",
+      "display": "O2 cylinder #2 pressure",
+      "definition": "O2 #2 cylinder pressure"
+    },
+    {
+      "code": "153172",
+      "display": "Concentration (or partial pressure) of xenon in airway gas",
+      "definition": "Measured partial pressure of xenon in airway gas"
+    },
+    {
+      "code": "153176",
+      "display": "End tidal xenon concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of xenon in airway gas measured at the end of expiration"
+    },
+    {
+      "code": "153180",
+      "display": "Expired xenon concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of xenon in airway gas measured during expiration"
+    },
+    {
+      "code": "153184",
+      "display": "Inspiratory xenon concentration (or partial pressure) in airway gas",
+      "definition": "Partial pressure of xenon in airway gas measured during inspiration"
+    },
+    {
+      "code": "153188",
+      "display": "Concentration xenon (gas delivery system)",
+      "definition": "Concentration of xenon in airway gas in the system conducting gas to and from the patient"
+    },
+    {
+      "code": "153192",
+      "display": "Concentration airway xenon expiratory (gas delivery system)",
+      "definition": "Concentration of xenon in airway gas measured during expiration in the system conducting gas from the patient"
+    },
+    {
+      "code": "153196",
+      "display": "Concentration airway xenon inspiratory (gas delivery system)",
+      "definition": "Concentration of xenon in airway gas measured during inspiration in the system conducting gas to the patient"
+    },
+    {
+      "code": "153200",
+      "display": "Xenon gas delivered during a case",
+      "definition": "Volume of xenon gas delivered during a case, to a single patient during a single procedure."
+    },
+    {
+      "code": "153204",
+      "display": "Total xenon gas delivered",
+      "definition": "Total volume of xenon gas delivered (potentially across multiple cases)"
+    },
+    {
+      "code": "153208",
+      "display": "Tidal volume per body mass",
+      "definition": "Volume of gas leaving the patient through the patient connection port, normalized by the patient�s ideal body weight (typ kg), reported individually or as an average for all breath types."
+    },
+    {
+      "code": "153212",
+      "display": "Target tidal volume",
+      "definition": "The ventilator calculated target volume of gas delivered to the patient."
+    },
+    {
+      "code": "153216",
+      "display": "Backup tidal volume",
+      "definition": "The volume of gas delivered to the patient when a backup inflation is delivered."
+    },
+    {
+      "code": "153220",
+      "display": "Inspired tidal volume (vent)",
+      "definition": "Volume of inspired gas during ventilator inflations."
+    },
+    {
+      "code": "153224",
+      "display": "Leakage volume, percent",
+      "definition": "Relative volume of gas lost per minute by leakage in ventilation system, tubing, connectors, etc. calculated as the difference between inspired and expired volume, relative to inspired volume, expressed as a percentage."
+    },
+    {
+      "code": "153228",
+      "display": "Reference minute volume calculated for the patient�s ideal body mass",
+      "definition": "The reference minute volume calculated for the patient, based on the patient�s ideal body weight"
+    },
+    {
+      "code": "153236",
+      "display": "Target Minute Volume",
+      "definition": "The calculated target minute volume, the product of reference minute volume and the percentage set by the clinician."
+    },
+    {
+      "code": "153240",
+      "display": "Alveolar minute ventilation",
+      "definition": "Volume of gas exchanged per minute in alveoli; difference between tidal volume and dead space"
+    },
+    {
+      "code": "153244",
+      "display": "Gastric pressure",
+      "definition": "Pressure measured in the stomach"
+    },
+    {
+      "code": "153248",
+      "display": "Transpulmonary pressure (difference)",
+      "definition": "The measured or estimated difference between the alveolar pressure and the intrapleural pressure."
+    },
+    {
+      "code": "153252",
+      "display": "Endotracheal cuff pressure",
+      "definition": "The pressure of the balloon that seals the endotracheal tube."
+    },
+    {
+      "code": "153256",
+      "display": "Endotracheal cuff pressure at the end of exhalation",
+      "definition": "The pressure of the balloon that seals the endotracheal tube at the end of exhalation."
+    },
+    {
+      "code": "153260",
+      "display": "Rise time percent",
+      "definition": "The time for pressure to reach a preset fraction of the set inspiratory pressure for controlled inflations, expressed as a percentage of the duration of the inspiratory phase."
+    },
+    {
+      "code": "153264",
+      "display": "Pressure support rise time percent",
+      "definition": "The time for pressure to reach a preset fraction of the set inspiratory pressure for support breaths, expressed as a percentage of the duration of the inspiratory phase"
+    },
+    {
+      "code": "153272",
+      "display": "% Ventilator end-inspiratory flow threshold",
+      "definition": "Flow threshold in ventilator to end the inspiratory phase, expressed as a percentage of peak inspiratory flow."
+    },
+    {
+      "code": "153276",
+      "display": "Work of breathing (intrinsic)",
+      "definition": "The work expended by the patient over one or more inspiratory and expiratory cycles.  Includes the physiologic resistive and elastic components of work and may exclude the work done by stored potential energy of the lung compliance overcoming airway resistance and tissue movement resistance during expiration.  The preferred calculation method is based on the Campbell diagram in which lung volume on the ordinate is plotted against the pleural or esophageal pressure on the abscissa and does not include the additional work WOBi imposed on the patient by the breathing apparatus.  Can be expressed as work per breath, work per unit volume, work per unit time (power) or work per unit volume per body mass.[1]"
+    },
+    {
+      "code": "153280",
+      "display": "Work of breathing - resistive",
+      "definition": "The resistive component of the work of breathing by the patient, using principles based on the Campbell diagram."
+    },
+    {
+      "code": "153284",
+      "display": "Work of breathing - elastic",
+      "definition": "The elastic component of the work of breathing by the patient, using principles based on Campbell diagram."
+    },
+    {
+      "code": "153288",
+      "display": "Work of breathing - ventilator",
+      "definition": "The work of breathing expended by the ventilator and applied to the patient over one or more inspiratory/inflation and expiratory cycles, calculated or estimated relative to the patient airway adaptor, endotracheal tube, endotracheal tube tip near the carina or other measurement site.[2]"
+    },
+    {
+      "code": "153292",
+      "display": "Imposed work of breathing (extrinsic)",
+      "definition": "The additional resistive work imposed on the patient by the breathing apparatus (endotracheal tube, breathing circuit, humidifier, demand valves and exhalation valves)"
+    },
+    {
+      "code": "153296",
+      "display": "Inspiratory pressure-time product",
+      "definition": "The integral of the transdiaphragmatic pressure (Peso � Pga) over the time interval between the start of the inspiratory effort and the end of the inspiratory phase of a respiratory cycle.  Reflects the exertion of the respiratory muscles during inspiration.  PTP can be expressed per breath or per unit time for multiple breaths."
+    },
+    {
+      "code": "153300",
+      "display": "Tube compensation, Automatic tube compensation",
+      "definition": "Endotracheal or tracheal tube compensation level, expressed as a percent from 0 (off) to 100 (full compensation) relative to level estimated by the ventilator based on tube type and size.  Compensation method not specified."
+    },
+    {
+      "code": "153304",
+      "display": "Tube type",
+      "definition": "Tube type, endotracheal or tracheal."
+    },
+    {
+      "code": "153308",
+      "display": "Tube size",
+      "definition": "Tube size (inside diameter) in millimeters."
+    },
+    {
+      "code": "153312",
+      "display": "Inspiratory time constant",
+      "definition": "The product of the inspiratory airway resistance and static compliance."
+    },
+    {
+      "code": "153316",
+      "display": "Expiratory time constant",
+      "definition": "The time needed for the lungs to passively deflate by a certain amount or a percentage of volume."
+    },
+    {
+      "code": "153320",
+      "display": "Slope of the alveolar plateau CO2 concentration with respect to expired volume",
+      "definition": "The slope of the CO2 concentration with respect to the expired gas volume during the alveolar plateau (Phase III) representing the emptying of alveoli with CO2-rich gas.  Method:  volumetric capnography."
+    },
+    {
+      "code": "153324",
+      "display": "Expired CO2 volume",
+      "definition": "Volume of expired CO2 during each breath, breath type(s) not specified."
+    },
+    {
+      "code": "153328",
+      "display": "Inspired CO2 volume",
+      "definition": "Volume of inspired CO2 during each breath, breath type(s) not specified."
+    },
+    {
+      "code": "153332",
+      "display": "Expired O2 volume",
+      "definition": "Volume of expired O2 during each breath, breath type(s) not specified."
+    },
+    {
+      "code": "153336",
+      "display": "Inspired O2 volume",
+      "definition": "Volume of inspired O2 during each breath, breath type(s) not specified."
+    },
+    {
+      "code": "153360",
+      "display": "Remaining number of cycles",
+      "definition": "Number of cycles remaining, including the current cycle.  Transitions to zero when delivery completed."
+    },
+    {
+      "code": "153364",
+      "display": "Remaining nebulization time for current cycle",
+      "definition": "Remaining nebulization time for current cycle.  Transitions to zero at the start of the pause interval when delivery for the current cycle is completed"
+    },
+    {
+      "code": "153368",
+      "display": "Total remaining nebulization time for current set of delivery cycles",
+      "definition": "Total remaining nebulization delivery time for current set of delivery cycles (does not include pause time)."
+    },
+    {
+      "code": "153372",
+      "display": "Elapsed nebulization time for current cycle",
+      "definition": "Elapsed time that fluid has been nebulized for current cycle."
+    },
+    {
+      "code": "153376",
+      "display": "Total elapsed nebulization time for current set of delivery cycles",
+      "definition": "Total elapsed time that fluid that has been nebulized for current set of delivery cycles."
+    },
+    {
+      "code": "153380",
+      "display": "Remaining fluid to be nebulized for current cycle",
+      "definition": "Estimated remaining volume of fluid to be nebulized for current cycle."
+    },
+    {
+      "code": "153384",
+      "display": "Total remaining fluid to be nebulized for current set of delivery cycles",
+      "definition": "Estimated total remaining volume of fluid to be nebulized for current set of delivery cycles."
+    },
+    {
+      "code": "153388",
+      "display": "Volume of fluid that has been nebulized for current cycle",
+      "definition": "Estimated volume of fluid that has been nebulized for current cycle."
+    },
+    {
+      "code": "153392",
+      "display": "Total volume of fluid that has been nebulized for current set of delivery cycles",
+      "definition": "Estimated volume of fluid that has been nebulized for current set of delivery cycles."
+    },
+    {
+      "code": "153396",
+      "display": "Nebulizer Flow",
+      "definition": "Additional inspiratory gas flow due to pneumatic nebulizer, externally indicated by a wall flow meter or other sensor.  This information can be manually or automatically entered and typically requires compensation by the ventilator."
+    },
+    {
+      "code": "153636",
+      "display": "Signal Quality Index",
+      "definition": "EEG Signal Quality Index, an indication of overall signal quality for calculating processed EEG variables such as BIS and interpreting EEG results."
+    },
+    {
+      "code": "153640",
+      "display": "Electromyography",
+      "definition": "Electromyographic signal strength, predominantly representing muscle activity above 70 Hz."
+    },
+    {
+      "code": "153644",
+      "display": "Bispectral Index",
+      "definition": "The bispectral index (BIS) is a quantitative assessment of depth of anesthesia, specifically the level of consciousness.  It is an index that ranges from 0 to 100.  No�measurable cortical activity would result in a BIS of 0 and a typical awake state is usually associated with an index of 90 to 100. Typical values for a patient undergoing general anesthesia are 40 to 60."
+    },
+    {
+      "code": "153648",
+      "display": "Response Entropy",
+      "definition": "A computed EEG variable used for assessing the depth of anesthesia based on the irregularity of the FEMG signal in the 0.8 to 47 Hz frequency band. Typical values for patients undergoing general anesthesia are between 40 and 60, and at these levels of entropy response, the probability of patient accidental awareness is low.  The overall display range for RE is 0 to 100."
+    },
+    {
+      "code": "153652",
+      "display": "State Entropy",
+      "definition": "A computed EEG variable used for assessing the depth of anesthesia based on the irregularity of the EEG signal in the 0.8 to 32 Hz frequency band.  Typical values for patients undergoing general anesthesia are between 40 and 60, and at these levels of entropy state, the probability of patient accidental awareness is low.  The overall display range of SE is 0 to 91."
+    },
+    {
+      "code": "153656",
+      "display": "SNAP Index",
+      "definition": "A computed EEG variable used to help assess the level of consciousness while under anesthesia based on the high- and low-frequency EEG.  Index values range from 0 to 100, with 0 reflecting no measurable cortical activity and 100 reflecting the awake state."
+    },
+    {
+      "code": "153660",
+      "display": "Patient State Index",
+      "definition": "A computed EEG index used to help assess the depth of sedation and anesthesia based on a multivariate combination of EEG variables."
+    },
+    {
+      "code": "154977",
+      "display": "Spike Count",
+      "definition": "Epileptic or potentially epileptogenic activity identifiers, spike count"
+    },
+    {
+      "code": "156241",
+      "display": "Burst Count",
+      "definition": "Epileptic or potentially epileptogenic activity identifiers, burst count"
+    },
+    {
+      "code": "156242",
+      "display": "Burst Rate",
+      "definition": "Epileptic or potentially epileptogenic activity identifiers, burst rate"
+    },
+    {
+      "code": "160052",
+      "display": "Serum coagulation ratio",
+      "definition": "."
+    },
+    {
+      "code": "160060",
+      "display": "Serum coagulation time",
+      "definition": "."
+    },
+    {
+      "code": "160184",
+      "display": "Capillary whole blood glucose",
+      "definition": "Whole blood glucose concentration taken from capillary"
+    },
+    {
+      "code": "160188",
+      "display": "Capillary plasma glucose",
+      "definition": "Plasma glucose concentration taken from capillary"
+    },
+    {
+      "code": "160192",
+      "display": "Venous whole blood glucose",
+      "definition": "Whole blood glucose concentration taken from venous"
+    },
+    {
+      "code": "160196",
+      "display": "Venous plasma glucose",
+      "definition": "Plasma glucose concentration taken from venous"
+    },
+    {
+      "code": "160200",
+      "display": "Arterial whole blood glucose",
+      "definition": "Whole blood glucose concentration taken from arterial"
+    },
+    {
+      "code": "160204",
+      "display": "Arterial plasma glucose",
+      "definition": "Plasma glucose concentration taken from arterial"
+    },
+    {
+      "code": "160208",
+      "display": "Control Result",
+      "definition": "Glucose concentration measurement produced from control solution"
+    },
+    {
+      "code": "160212",
+      "display": "Interstitia Fluid Glucose",
+      "definition": "Glucose concentration measurement indirectly derived from interstitial fluid"
+    },
+    {
+      "code": "160216",
+      "display": "Base Excess of Extracellular Fluid",
+      "definition": "Base excess of extracellular fluid"
+    },
+    {
+      "code": "160220",
+      "display": "HbA1c",
+      "definition": "A1c or glycated hemoglobin concentration."
+    },
+    {
+      "code": "160252",
+      "display": "Base Excess of Arterial Blood",
+      "definition": "Base excess of arterial blood"
+    },
+    {
+      "code": "160256",
+      "display": "Ionized Calcium, Normalized to pH 7.4",
+      "definition": "Ionized calcium in blood fluid, normalized to pH 7.4"
+    },
+    {
+      "code": "160260",
+      "display": "Coagulation ratio � INR",
+      "definition": "The globally recommended normalized unit for measuring prothrombin time"
+    },
+    {
+      "code": "160264",
+      "display": "Coagulation time � prothrombin time",
+      "definition": "The time taken for a clot to form on the addition of a thromboplastin to a sample of venous or capillary blood"
+    },
+    {
+      "code": "160268",
+      "display": "Coagulation quick value",
+      "definition": "The measured prothrombin time is expressed in relation to the coagulation time of a healthy person, i.e., the �percentage of the standard value.�"
+    },
+    {
+      "code": "160272",
+      "display": "International Sensitivity Index",
+      "definition": "Standardized calibration for a thromboplastin compared to the WHO standard."
+    },
+    {
+      "code": "160276",
+      "display": "Control calibration of INR",
+      "definition": "Control Solution of INR monitor"
+    },
+    {
+      "code": "160280",
+      "display": "(Estimated) Arterial Oxygen Content",
+      "definition": "An estimate of the amount of oxygen bound to hemoglobin plus the amount of oxygen dissolved in arterial blood (not bound to hemoglobin)."
+    },
+    {
+      "code": "160284",
+      "display": "Arterial blood carboxyhemoglobin concentration",
+      "definition": "Carboxyhemoglobin concentration in the arterial blood, measured by pulse oximetry."
+    },
+    {
+      "code": "160288",
+      "display": "Arterial blood methemoglobin concentration",
+      "definition": "Methemoglobin concentration in the arterial blood, measured by pulse oximetry."
+    },
+    {
+      "code": "160292",
+      "display": "Arterial blood hemoglobin concentration",
+      "definition": "Total Hemoglobin concentration in the arterial blood, measured by pulse oximetry."
+    },
+    {
+      "code": "160296",
+      "display": "Preductal SpO2",
+      "definition": "Preductal oxygen saturation measured at a site that receives blood flow from the aorta before the level of the ductus arteriosus (see�Note 1)."
+    },
+    {
+      "code": "160300",
+      "display": "Postductal SpO2",
+      "definition": "Postductal oxygen saturation is measured at a site that receives blood flow from the aorta after the level of the ductus arteriosus (see�Note 2)."
+    },
+    {
+      "code": "160304",
+      "display": "Pre-postductal SpO2 difference",
+      "definition": "The difference between preductal and postductal oxygen saturation measurement (see Note 3)."
+    },
+    {
+      "code": "160308",
+      "display": "Gastric-arterial CO2 Gap",
+      "definition": "Difference (gap) between gastric mucosal (PgCO2) and arterial (PaCO2) partial pressures of carbon dioxide."
+    },
+    {
+      "code": "160312",
+      "display": "Gastric-endtidal CO2 Gap",
+      "definition": "Difference (gap) between gastric mucosal (PgCO2) and end-tidal (EtCO2) partial pressures of carbon dioxide."
+    },
+    {
+      "code": "160316",
+      "display": "Gastric Mucosal PCO2",
+      "definition": "Gastric mucosal (PgCO2) partial pressure of carbon dioxide."
+    },
+    {
+      "code": "160320",
+      "display": "Intramucosal pH",
+      "definition": "Intramucosal pH"
+    },
+    {
+      "code": "160324",
+      "display": "SPO2 Signal Quality Index",
+      "definition": "SpO2 Signal Quality Index, an indication of overall signal quality for calculating SpO2 and other values using pulse oximetry."
+    },
+    {
+      "code": "160364",
+      "display": "Undetermined whole blood glucose",
+      "definition": "Whole blood glucose concentration taken from undetermined sample source"
+    },
+    {
+      "code": "160368",
+      "display": "Undetermined arterial plasma glucose",
+      "definition": "Plasma glucose concentration taken from undetermined sample source"
+    },
+    {
+      "code": "184288",
+      "display": "Oxygen Reading",
+      "definition": "The oxygen concentration inside the incubator micro-environment."
+    },
+    {
+      "code": "184292",
+      "display": "Measured Relative Humidity",
+      "definition": "Measured relative humidity inside the infant incubator"
+    },
+    {
+      "code": "184296",
+      "display": "Compartment Probe Temperature",
+      "definition": "Compartment probe (incubator air) temperature"
+    },
+    {
+      "code": "184300",
+      "display": "Heater Power",
+      "definition": "The heater power is the percentage of power (or actual power in watts) necessary to maintain the set temperature of the incubator or warmer."
+    },
+    {
+      "code": "184304",
+      "display": "Incubator heater heat sink temperature sensor resistance",
+      "definition": "Incubator heater heat sink and fin assembly temperature sensor resistance"
+    },
+    {
+      "code": "184308",
+      "display": "Incubator heater heat sink temperature",
+      "definition": "Incubator heater heat sink and fin assembly temperature"
+    },
+    {
+      "code": "184331",
+      "display": "SpO2 precise pulse",
+      "definition": "An enumeration that indicates the maximal inrush of the pulsatile wave has occurred"
+    },
+    {
+      "code": "184336",
+      "display": "Microenvironment Bed Type",
+      "definition": "The type of bed used for an infant in the neonatal intensive care unit or newborn nursery. A radiant warmer is an open bed, an incubator is a closed bed, and an incubator that can serve as a radiant warmer is a combination bed."
+    },
+    {
+      "code": "184337",
+      "display": "Incubator heater type",
+      "definition": "Incubator or warmer heater currently being used.  This may include radiant, convective or none (no heat)."
+    },
+    {
+      "code": "184338",
+      "display": "Bed State",
+      "definition": "The bed state indicates whether the infant�s incubator is closed, partially open or open, i.e. the top of the incubator is raised."
+    },
+    {
+      "code": "184339",
+      "display": "Air Curtain Status",
+      "definition": "The air curtain on an incubator is a specially-designed airflow to reduce temperature fluctuation and maintain the temperature inside the incubator when its access doors are opened.  The air curtain state indicates whether the air curtain is on, off or has been disabled by the user."
+    },
+    {
+      "code": "184340",
+      "display": "Temperature Control Mode",
+      "definition": "Specifies the manner in which the temperature of an infant incubator or radiant warmer is controlled.  For�closed beds (incubators) the temperature is controlled based on patient sensor or air temperature.  For�open beds (open incubator or warmer) the temperature is controlled based on patient sensor or manually set temperature."
+    },
+    {
+      "code": "184341",
+      "display": "Fan Speed",
+      "definition": "The speed of the fan that controls the airflow in an infant incubator, such as low or high."
+    },
+    {
+      "code": "184352",
+      "display": "Ventilation mode",
+      "definition": "Selected mode of ventilator"
+    },
+    {
+      "code": "184353",
+      "display": "Respiration mode",
+      "definition": "Selected mode of respirator"
+    },
+    {
+      "code": "184400",
+      "display": "Backup ventilation mode",
+      "definition": "Selected backup mode of ventilator"
+    },
+    {
+      "code": "184404",
+      "display": "Anesthetic agent(s)",
+      "definition": "The identity of volatile anesthetic agents that have been detected and/or are known to be present in airway gas during inspiration and/or inflation."
+    },
+    {
+      "code": "184405",
+      "display": "Balance Gas",
+      "definition": "The identity of the balance (carrier) gases that have been detected and/or are known to be present in airway gas during inspiration and/or inflation."
+    },
+    {
+      "code": "184408",
+      "display": "Nebulizer type",
+      "definition": "Specifies the nebulizer type, such as an aerosolizer (using a micro pump) or pneumatic (using an external air or oxygen supply)."
+    },
+    {
+      "code": "184409",
+      "display": "Nebulizer status",
+      "definition": "Specifies the nebulizer operational status, such as nebulizer on/off, nebulizer failure, no nebulizer, nebulizer not connected and other information."
+    },
+    {
+      "code": "188452",
+      "display": "Axillary (armpit) temperature",
+      "definition": "Axillary (armpit) temperature"
+    },
+    {
+      "code": "188456",
+      "display": "Gastro-intestinal tract temperature",
+      "definition": "Gastro-intestinal tract temperature"
+    },
+    {
+      "code": "188488",
+      "display": "Transcutaneous probe heater power",
+      "definition": "Transcutaneous sensor heater power"
+    },
+    {
+      "code": "188492",
+      "display": "Transcutaneous probe temperature",
+      "definition": "Transcutaneous sensor temperature"
+    },
+    {
+      "code": "188496",
+      "display": "Axillary temperature",
+      "definition": "Axillary (armpit) temperature"
+    },
+    {
+      "code": "188500",
+      "display": "Myocardial temperature",
+      "definition": "Myocardial temperature"
+    },
+    {
+      "code": "188504",
+      "display": "Nasal temperature",
+      "definition": "Nasal temperature"
+    },
+    {
+      "code": "188508",
+      "display": "Room temperature",
+      "definition": "Room temperature"
+    },
+    {
+      "code": "188736",
+      "display": "Patient actual weight",
+      "definition": "The measurement of the mass of patient, e.g., by a scale in bed, e.g., during therapy"
+    },
+    {
+      "code": "188748",
+      "display": "body fat",
+      "definition": "The individual's body fat in kilograms divided by the individual's weight in kilograms"
+    },
+    {
+      "code": "188752",
+      "display": "body mass index",
+      "definition": "The individual's body weight, in kilograms, divided by the square of height, in meters"
+    },
+    {
+      "code": "188756",
+      "display": "fat free mass",
+      "definition": "The sum of the soft lean mass and mineral mass in the human body."
+    },
+    {
+      "code": "188760",
+      "display": "soft lean mass",
+      "definition": "The sum of the soft lean mass in the human body."
+    },
+    {
+      "code": "188764",
+      "display": "body water",
+      "definition": "The individual's body water in kilograms divided by the individual's weight"
+    },
+    {
+      "code": "188792",
+      "display": "Last Taken Weight",
+      "definition": "Last Taken Weight"
+    },
+    {
+      "code": "188796",
+      "display": "Ideal Body Weight,",
+      "definition": "Ideal body weight (IBW), an estimate based solely on patient height using the Devine Formula (1974):"
+    },
+    {
+      "code": "188800",
+      "display": "Adjusted Body Weight",
+      "definition": "Adjusted Body Weight, an estimate based on the IBW and following rule:"
+    },
+    {
+      "code": "268896"
+    },
+    {
+      "code": "268928"
+    },
+    {
+      "code": "268960"
+    },
+    {
+      "code": "268992"
+    },
+    {
+      "code": "269024"
+    },
+    {
+      "code": "269056"
+    },
+    {
+      "code": "269088"
+    },
+    {
+      "code": "269120"
+    },
+    {
+      "code": "269152"
+    },
+    {
+      "code": "269184"
+    },
+    {
+      "code": "269216"
+    },
+    {
+      "code": "269248"
+    },
+    {
+      "code": "269280"
+    },
+    {
+      "code": "269312"
+    },
+    {
+      "code": "269344"
+    },
+    {
+      "code": "269376"
+    },
+    {
+      "code": "269408"
+    },
+    {
+      "code": "269440"
+    },
+    {
+      "code": "269472"
+    },
+    {
+      "code": "269504"
+    },
+    {
+      "code": "269536"
+    },
+    {
+      "code": "269568"
+    },
+    {
+      "code": "269600"
+    },
+    {
+      "code": "269632"
+    },
+    {
+      "code": "269664"
+    },
+    {
+      "code": "269696"
+    },
+    {
+      "code": "269728"
+    },
+    {
+      "code": "269760"
+    },
+    {
+      "code": "269792"
+    },
+    {
+      "code": "269824"
+    },
+    {
+      "code": "269856"
+    },
+    {
+      "code": "269888"
+    },
+    {
+      "code": "269920"
+    },
+    {
+      "code": "269952"
+    },
+    {
+      "code": "269984"
+    },
+    {
+      "code": "270004"
+    },
+    {
+      "code": "270016"
+    },
+    {
+      "code": "270176"
+    },
+    {
+      "code": "270208"
+    },
+    {
+      "code": "270240"
+    },
+    {
+      "code": "270272"
+    },
+    {
+      "code": "270304"
+    },
+    {
+      "code": "270336"
+    },
+    {
+      "code": "270368"
+    },
+    {
+      "code": "270400"
+    },
+    {
+      "code": "270432"
+    },
+    {
+      "code": "270464"
+    },
+    {
+      "code": "270496"
+    },
+    {
+      "code": "270528"
+    },
+    {
+      "code": "270560"
+    },
+    {
+      "code": "270592"
+    },
+    {
+      "code": "270624"
+    },
+    {
+      "code": "270656"
+    },
+    {
+      "code": "270688"
+    },
+    {
+      "code": "270720"
+    },
+    {
+      "code": "270752"
+    },
+    {
+      "code": "270784"
+    },
+    {
+      "code": "270816"
+    },
+    {
+      "code": "270848"
+    },
+    {
+      "code": "270880"
+    },
+    {
+      "code": "270912"
+    },
+    {
+      "code": "270944"
+    },
+    {
+      "code": "270976"
+    },
+    {
+      "code": "271008"
+    },
+    {
+      "code": "271040"
+    },
+    {
+      "code": "271072"
+    },
+    {
+      "code": "271104"
+    },
+    {
+      "code": "271136"
+    },
+    {
+      "code": "271168"
+    },
+    {
+      "code": "271200"
+    },
+    {
+      "code": "271232"
+    },
+    {
+      "code": "271264"
+    },
+    {
+      "code": "271296"
+    },
+    {
+      "code": "271328"
+    },
+    {
+      "code": "271360"
+    },
+    {
+      "code": "271392"
+    },
+    {
+      "code": "271424"
+    },
+    {
+      "code": "271456"
+    },
+    {
+      "code": "271488"
+    },
+    {
+      "code": "271520"
+    },
+    {
+      "code": "271552"
+    },
+    {
+      "code": "271584"
+    },
+    {
+      "code": "271616"
+    },
+    {
+      "code": "271648"
+    },
+    {
+      "code": "271680"
+    },
+    {
+      "code": "271712"
+    },
+    {
+      "code": "271744"
+    },
+    {
+      "code": "271776"
+    },
+    {
+      "code": "271808"
+    },
+    {
+      "code": "271840"
+    },
+    {
+      "code": "271872"
+    },
+    {
+      "code": "271904"
+    },
+    {
+      "code": "271936"
+    },
+    {
+      "code": "271968"
+    },
+    {
+      "code": "272000"
+    },
+    {
+      "code": "272032"
+    },
+    {
+      "code": "272064"
+    },
+    {
+      "code": "272096"
+    },
+    {
+      "code": "272128"
+    },
+    {
+      "code": "272160"
+    },
+    {
+      "code": "272192"
+    },
+    {
+      "code": "272224"
+    },
+    {
+      "code": "272256"
+    },
+    {
+      "code": "272288"
+    },
+    {
+      "code": "272320"
+    },
+    {
+      "code": "272352"
+    },
+    {
+      "code": "272384"
+    },
+    {
+      "code": "272416"
+    },
+    {
+      "code": "272448"
+    },
+    {
+      "code": "272480"
+    },
+    {
+      "code": "272512"
+    },
+    {
+      "code": "272544"
+    },
+    {
+      "code": "272576"
+    },
+    {
+      "code": "272608"
+    },
+    {
+      "code": "272640"
+    },
+    {
+      "code": "272672"
+    },
+    {
+      "code": "272704"
+    },
+    {
+      "code": "272736"
+    },
+    {
+      "code": "272768"
+    },
+    {
+      "code": "272800"
+    },
+    {
+      "code": "272832"
+    },
+    {
+      "code": "272864"
+    },
+    {
+      "code": "272896"
+    },
+    {
+      "code": "272928"
+    },
+    {
+      "code": "272960"
+    },
+    {
+      "code": "272992"
+    },
+    {
+      "code": "273024"
+    },
+    {
+      "code": "273056"
+    },
+    {
+      "code": "273088"
+    },
+    {
+      "code": "273120"
+    },
+    {
+      "code": "273152"
+    },
+    {
+      "code": "273184"
+    },
+    {
+      "code": "273216"
+    },
+    {
+      "code": "273248"
+    },
+    {
+      "code": "273280"
+    },
+    {
+      "code": "273312"
+    },
+    {
+      "code": "273344"
+    },
+    {
+      "code": "460041",
+      "definition": "Left ear (theta 120, phi 180)"
+    },
+    {
+      "code": "460042",
+      "definition": "Right ear (theta 120, phi 0)"
+    },
+    {
+      "code": "460597",
+      "definition": "Regional EEG site, left occipital"
+    },
+    {
+      "code": "460598",
+      "definition": "Regional EEG site, right occipital"
+    },
+    {
+      "code": "460601",
+      "definition": "Regional EEG site, left parietal"
+    },
+    {
+      "code": "460602",
+      "definition": "Regional EEG site, right parietal"
+    },
+    {
+      "code": "460605",
+      "definition": "Regional EEG site, left temporal"
+    },
+    {
+      "code": "460606",
+      "definition": "Regional EEG site, right temporal"
+    },
+    {
+      "code": "460609",
+      "definition": "Regional EEG site, left frontal"
+    },
+    {
+      "code": "460610",
+      "definition": "Regional EEG site, right frontal"
+    },
+    {
+      "code": "460613",
+      "definition": "Regional EEG site, left frontal polar"
+    },
+    {
+      "code": "460614",
+      "definition": "Regional EEG site, right frontal polar"
+    },
+    {
+      "code": "460616",
+      "definition": "Originates from the spinal column from above the cervical vertebra 5 (C5).  Normally used for somatosensory evoked potentials, but can also be used as an EEG monitoring site."
+    },
+    {
+      "code": "460633",
+      "definition": "Custom EEG electrode site, X1"
+    },
+    {
+      "code": "460634",
+      "definition": "Custom EEG electrode site, X2"
+    },
+    {
+      "code": "460635",
+      "definition": "Custom EEG electrode site, X3"
+    },
+    {
+      "code": "460636",
+      "definition": "Custom EEG electrode site, X4"
+    },
+    {
+      "code": "460637",
+      "definition": "Custom EEG electrode site, X5"
+    },
+    {
+      "code": "460638",
+      "definition": "Custom EEG electrode site, X6"
+    },
+    {
+      "code": "460800",
+      "definition": "not otherwise specified"
+    },
+    {
+      "code": "460801",
+      "definition": "airway adaptor (patient connection port)"
+    },
+    {
+      "code": "460802",
+      "definition": "Y-piece patient interface (circle system)"
+    },
+    {
+      "code": "460803",
+      "definition": "endotracheal tube"
+    },
+    {
+      "code": "460804",
+      "definition": "fresh gas flow"
+    },
+    {
+      "code": "460805",
+      "definition": "exhaust (or scavenger)"
+    },
+    {
+      "code": "460806",
+      "definition": "inspiratory limb"
+    },
+    {
+      "code": "460807",
+      "definition": "expiratory limb"
+    },
+    {
+      "code": "460809",
+      "definition": "left bronchus"
+    },
+    {
+      "code": "460810",
+      "definition": "right bronchus"
+    },
+    {
+      "code": "460812",
+      "definition": "patient interface"
+    },
+    {
+      "code": "460813",
+      "definition": "endotracheal tube, near the carina"
+    },
+    {
+      "code": "460824",
+      "definition": "CO"
+    },
+    {
+      "code": "460825",
+      "definition": "CO"
+    },
+    {
+      "code": "460826",
+      "definition": "fresh gas decoupling valve  (piston only)"
+    },
+    {
+      "code": "460827",
+      "definition": "inspiratory valve (unidirectional, to patient)"
+    },
+    {
+      "code": "460828",
+      "definition": "expiratory valve (unidirectional, from patient)"
+    },
+    {
+      "code": "460829",
+      "definition": "PEEP/P"
+    },
+    {
+      "code": "460830",
+      "definition": "Bag"
+    },
+    {
+      "code": "460831",
+      "definition": "bellows (interior)"
+    },
+    {
+      "code": "460832",
+      "definition": "drive gas for bellows (exterior)"
+    },
+    {
+      "code": "460833",
+      "definition": "Piston"
+    },
+    {
+      "code": "460834",
+      "definition": "Blower"
+    },
+    {
+      "code": "460835",
+      "definition": "pop-off valve (fixed setting)"
+    },
+    {
+      "code": "460836",
+      "definition": "adjustable pressure-limiting valve"
+    },
+    {
+      "code": "460837",
+      "definition": "scavenger valve (unidirectional)"
+    },
+    {
+      "code": "460838",
+      "definition": "Bidirectional �To-Fro� tube (Mapleson)"
+    },
+    {
+      "code": "460839",
+      "definition": "Mapleson A := FGF BAG TOFRO POV PI"
+    },
+    {
+      "code": "460840",
+      "definition": "Mapleson B := BAG TOFRO FGF POV PI"
+    },
+    {
+      "code": "460841",
+      "definition": "Mapleson C := BAG FGF POV PI"
+    },
+    {
+      "code": "460842",
+      "definition": "Mapleson D := BAG POV TOFRO FGF PI"
+    },
+    {
+      "code": "460843",
+      "definition": "Mapleson E := EXH TOFRO FGF PI"
+    },
+    {
+      "code": "460844",
+      "definition": "Mapleson F := EXH BAG TOFRO FGF PI"
+    },
+    {
+      "code": "460845",
+      "definition": "Special/custom measurement site 1"
+    },
+    {
+      "code": "460846",
+      "definition": "Special/custom measurement site 2"
+    },
+    {
+      "code": "460847",
+      "definition": "Nebulizer"
+    },
+    {
+      "code": "460848",
+      "definition": "Heat and Moisture Exchanger"
+    },
+    {
+      "code": "460849",
+      "definition": "Heat and Moisture Exchanger / Filter"
+    },
+    {
+      "code": "531968",
+      "definition": "Start of Infrastructure Harmonization range for Continua WAN"
+    },
+    {
+      "code": "531969",
+      "definition": "The"
+    },
+    {
+      "code": "531970",
+      "definition": "The"
+    },
+    {
+      "code": "531971",
+      "definition": "The"
+    },
+    {
+      "code": "531972",
+      "definition": "The"
+    },
+    {
+      "code": "531973",
+      "definition": "The"
+    },
+    {
+      "code": "531974",
+      "definition": "The"
+    },
+    {
+      "code": "531975",
+      "definition": "The"
+    },
+    {
+      "code": "531976",
+      "definition": "The"
+    },
+    {
+      "code": "531977",
+      "definition": "The"
+    },
+    {
+      "code": "531978",
+      "definition": "The"
+    },
+    {
+      "code": "531979",
+      "definition": "Attribute that specifies the IEEE Std 11073-10104 SPO2 or Pulse Rate Modality as an enumeration of the following values:"
+    },
+    {
+      "code": "531980",
+      "definition": "Sample Array Flags used to help downstream consumers display the Real Time Sample Array (RTSA) SA-Value waveform"
+    },
+    {
+      "code": "531981",
+      "definition": "Defines the MDS-level entity for a Continua \"Application Hosting Device\" (AHD)."
+    },
+    {
+      "code": "532224",
+      "definition": "An uncalibrated and unsynchronized local clock source"
+    },
+    {
+      "code": "532225",
+      "definition": "Network Time Protocol Version 3.0 (RFC 1305)"
+    },
+    {
+      "code": "532226",
+      "definition": "Network Time Protocol Version 4.0 (under dev)"
+    },
+    {
+      "code": "532227",
+      "definition": "Simple Network Time Protocol v4 (RFC 2030)"
+    },
+    {
+      "code": "532228",
+      "definition": "Simple Network Time Protocol v4 (RFC 4330)"
+    },
+    {
+      "code": "532229",
+      "definition": "Bluetooth Medical Device Profile"
+    },
+    {
+      "code": "532230",
+      "definition": "Atomic Clock synchronization through RF"
+    },
+    {
+      "code": "532231",
+      "definition": "Synchronized via Health Level 7 NCK (network clock)"
+    },
+    {
+      "code": "532232",
+      "definition": "CDMA mobile telecommunications synchronization"
+    },
+    {
+      "code": "532233",
+      "definition": "GSM - Network Identity and Time Zone (NITZ)"
+    },
+    {
+      "code": "532234",
+      "definition": "A manually set time, by �eyeball and wristwatch�"
+    },
+    {
+      "code": "532235",
+      "definition": "Synced to the 1kHz USB \"start-of-frame\" clock"
+    },
+    {
+      "code": "532236",
+      "definition": "A time sync method that is out of scope for IEEE 11073"
+    },
+    {
+      "code": "532237",
+      "definition": "A time sync method based on other mobile network technology that is not listed above"
+    },
+    {
+      "code": "532238",
+      "definition": "A time sync method based on GPS information"
+    },
+    {
+      "code": "532352",
+      "definition": "Regulation-Certification-Continua-Version (hypothetical decomposition of MDC_ATTR_REG-CERT-DATALIST Continua Body Certified Device Version sub element)"
+    },
+    {
+      "code": "532353",
+      "definition": "Regulation-Certification-Continua-Certified-Device-List (hypothetical decomposition of MDC_ATTR_REGCERT-DATA-LIST Continua Body Certified Device List sub element)"
+    },
+    {
+      "code": "532354",
+      "definition": "Regulation-Certification-Continua-Regulation-Status (hypothetical decomposition of MDC_ATTR_REGCERT-DATA-LIST Continua Body Regulation Status sub element)"
+    },
+    {
+      "code": "532365",
+      "definition": "Regulation-Certification-Continua-AHD-Cert-List"
+    },
+    {
+      "code": "16928802",
+      "display": "Set inflation rate",
+      "definition": "Displayed minimum and/or actual ventilator rate setting, may be mode dependent."
+    },
+    {
+      "code": "16928804",
+      "display": "Minimum assured ventilation inflation rate setting",
+      "definition": "Minimum assured ventilator-initiated inflation rate, e.g. in continuous mandatory ventilation or assist/mandatory ventilation mode."
+    },
+    {
+      "code": "16928805",
+      "display": "Average ventilation rate setting",
+      "definition": "Average ventilator-initiated inflation rate, e.g. in Synchronized Intermittent Mandatory Ventilation (SIMV) ventilation mode."
+    },
+    {
+      "code": "16929020",
+      "display": ".",
+      "definition": "Positive end expiratory pressure applied to the airway during spontaneous breathing, e.g. by an expiratory valve on the breathing circuit."
+    },
+    {
+      "code": "16929048",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929072",
+      "display": "Apnea alarm duration setting",
+      "definition": "."
+    },
+    {
+      "code": "16929164",
+      "display": "Inspiratory flow setting",
+      "definition": "."
+    },
+    {
+      "code": "16929188",
+      "display": ".",
+      "definition": "Inspiratory airway pressure setting."
+    },
+    {
+      "code": "16929192",
+      "display": "Set PEEP",
+      "definition": "Positive end expiratory pressure applied to the airway by the ventilator during expiratory phase."
+    },
+    {
+      "code": "16929196",
+      "display": "Tidal volume setting",
+      "definition": "."
+    },
+    {
+      "code": "16929224",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929228",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929300",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929304",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929308",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929312",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929316",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929416",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929420",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929424",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929428",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929432",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929632",
+      "display": "Inspiratory time setting",
+      "definition": "."
+    },
+    {
+      "code": "16929633",
+      "display": "Maximum inspiratory time setting",
+      "definition": "The maximum inspiratory time to deliver a pressure-controlled or operator-set tidal volume inflation."
+    },
+    {
+      "code": "16929644",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929656",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929698",
+      "display": "Backup ventilation rate setting",
+      "definition": "Apnea (backup) rate, e.g. in CSV mode."
+    },
+    {
+      "code": "16929820",
+      "display": "Inspiratory time percent setting",
+      "definition": "."
+    },
+    {
+      "code": "16929832",
+      "display": "Backup inspiratory time setting",
+      "definition": "."
+    },
+    {
+      "code": "16929837",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929840",
+      "display": ".",
+      "definition": "Interval from the end of inspiratory flow to the start of expiratory flow during volume-control (VC) inflations, expressed as a time duration."
+    },
+    {
+      "code": "16929844",
+      "display": ".",
+      "definition": "Interval from the end of inspiratory flow to the start of expiratory flow during volume-control (VC) inflations, expressed as a percentage of the duration of the inspiratory phase."
+    },
+    {
+      "code": "16929848",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929852",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929860",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929864",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929868",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929872",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929932",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929936",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929940",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929944",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929948",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929952",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929956",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929960",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929964",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929968",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929972",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929976",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929980",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929984",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16929988",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930020",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930024",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930360",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930432",
+      "display": "Backup tidal volume setting",
+      "definition": "."
+    },
+    {
+      "code": "16930436",
+      "display": "Inspired tidal volume setting",
+      "definition": "."
+    },
+    {
+      "code": "16930438",
+      "display": "Minimum inspired tidal volume setting",
+      "definition": "Minimum volume of inspired gas during ventilator inflations."
+    },
+    {
+      "code": "16930448",
+      "display": "Percentage of the reference minute volume calculated for the patient�s ideal body mass",
+      "definition": "The percentage of the reference minute volume (calculated for the patient based on the patient�s ideal body weight) set by the clinician."
+    },
+    {
+      "code": "16930476",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930484",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930488",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16930560",
+      "display": "(set) nebulizer run time",
+      "definition": "Specifies the nebulizer run time per delivery cycle."
+    },
+    {
+      "code": "16930564",
+      "display": "(set) nebulizer volume",
+      "definition": "Specifies the nebulizer volume per delivery cycle."
+    },
+    {
+      "code": "16930568",
+      "display": "(set) nebulizer cycles",
+      "definition": "Specifies the number of nebulizer delivery cycles having a specified run time and/or volume when operating in scheduled mode."
+    },
+    {
+      "code": "16930572",
+      "display": "(set) nebulizer pause time",
+      "definition": "Specifies the pause (time duration) between nebulizer delivery cycles when operating in scheduled mode."
+    },
+    {
+      "code": "16930604",
+      "display": ".",
+      "definition": "."
+    },
+    {
+      "code": "16961620",
+      "display": ".",
+      "definition": "The identity of volatile anesthetic agents based on user selection of vaporizer and/or cassette."
+    },
+    {
+      "code": "16961621",
+      "display": ".",
+      "definition": "The identity of the balance (carrier) gases based on user selection."
+    },
+    {
+      "code": "16961626",
+      "display": "(set) nebulizer mode",
+      "definition": "Specifies the nebulizer operational mode, including intermittent, scheduled or continuous modes.  Selecting intermittent mode delivers a single timed delivery based on the programmed run time and/or volume, and for scheduled mode, the number of cycles and pause time between cycles.  Selecting continuous mode delivers nebulized medication until the medication runs out or delivery is stopped."
+    }
+  ],
+  "count": 918,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ISO_11073_10101a_Ventilator_Codes</h2><tt>data:text/plain;charset=utf-8,iso11073-10101a</tt><p>Used for mapping ventilation data attributes to ISO 11073 10101a codes from 2015</p></div>"
+  },
+  "title": "ISO 11073 10101a Codes",
+  "hierarchyMeaning": "part-of",
+  "experimental": true,
+  "id": "4dffc245-5b75-4c74-9c05-3bfbb2b26061"
+}

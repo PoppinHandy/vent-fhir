@@ -1,0 +1,6 @@
+jre=8.0.151
+apache-tomcat=9.0.19
+apache-maven=3.6.0
+hapi-fhir-jpaserver=3.7.0
+hapi-fhir-cli=3.7.0
+postgres-sql=10.1
